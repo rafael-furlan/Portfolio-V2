@@ -25,7 +25,8 @@ function WorkPage() {
         <title>Rafael Furlan</title>
     </Helmet>
 
-    <CustomCursor />
+    {!isTouchDevice && <CustomCursor />}
+
       <div className='w-full min-h-screen flex flex-col overflow-visible cursor-none bg-gray-50 overflow-hidden'>
       <TopBar/>
       
