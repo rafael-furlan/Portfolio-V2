@@ -24,6 +24,10 @@ function WorkPage() {
         <link rel="icon" href="public/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
         <title>my portfolio website</title>
     </Helmet>
+    
+    <head>
+  <link rel="icon" href="/favicon-fractal.svg" type="image/svg+xml" />
+    </head>
 
     <CustomCursor />
       <div className='w-full min-h-screen flex flex-col overflow-visible cursor-none bg-gray-50 overflow-hidden'>
