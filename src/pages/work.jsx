@@ -4,6 +4,14 @@ import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
 
 function WorkPage() {
+
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    // Detecta se é dispositivo touch
+    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+  }, []);
+  
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
