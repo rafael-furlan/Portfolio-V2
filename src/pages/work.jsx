@@ -21,13 +21,9 @@ function WorkPage() {
   return (
     <>
     <Helmet>
-        <link rel="icon" href="public/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
+        <link rel="icon" href="/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
         <title>my portfolio website</title>
     </Helmet>
-    
-    <head>
-  <link rel="icon" href="/favicon-fractal.svg" type="image/svg+xml" />
-    </head>
 
     <CustomCursor />
       <div className='w-full min-h-screen flex flex-col overflow-visible cursor-none bg-gray-50 overflow-hidden'>
@@ -57,8 +53,8 @@ function WorkPage() {
      
       <div id="grid" className='grid gri-cols-1 pl-8 pr-8 pb-16 gap-4 sm:grid-cols-2 sm:pl-16 sm:pr-16 sm:pb-16 sm:gap-4' data-cursor="view">
         <div className='bg-[url(/images/project-placeholders/img-8.png)] w-full aspect-square flex items-center justify-center' ></div>
-        <div className='bg-[url(public/images/project-placeholders/img-6.png)] w-full aspect-square flex items-center justify-center' ></div>
-        <div className='bg-[url(public/images/project-placeholders/img-7.png)] w-full aspect-square flex items-center justify-center' ></div>
+        <div className='bg-[url(/images/project-placeholders/img-6.png)] w-full aspect-square flex items-center justify-center' ></div>
+        <div className='bg-[url(/images/project-placeholders/img-7.png)] w-full aspect-square flex items-center justify-center' ></div>
         <div className='bg-[url(/images/project-placeholders/img-5.png)] w-full aspect-square flex items-center justify-center' ></div>
       </div>
       
