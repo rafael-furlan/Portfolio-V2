@@ -1,0 +1,86 @@
+
+/* style-guide.css */
+:root {
+  /* neutral colors */
+  --neutral-color-1: #F6F6F6; 
+  --neutral-color-2: #EDECEF; 
+  --neutral-color-3: #E6E4E8; 
+  --neutral-color-4: #D8D6DC; 
+  --neutral-color-5: #CBC8D0; 
+  --neutral-color-6: #7E758A; 
+  --neutral-color-7: #655E6E; 
+  --neutral-color-8: #4B4653; 
+  --neutral-color-9: #3F3B45; 
+  --neutral-color-10:#35313A; 
+
+  /* alpha colors */
+
+  --alpha-color-1: (#F6F6F6E6); 
+ 
+  /* Fontes */
+  --font-family: 'Work Sans', sans-serif;
+
+  /* Tamanhos de fontes desktop*/
+  --desk-h1-size: 72px;
+  --desk-h2-size: 64px;
+  --desk-h3-size: 40px;
+  --desk-h4-size: 42px;
+  --desk-h5-size: 35px;
+  --desk-h6-size: 20px;
+  --desk-body-size: 17px;
+
+  /* Tamanhos de fontes mobile*/
+  --mobile-h1-size: 50px;
+  --mobile-h2-size: 42px;
+  --mobile-h3-size: 35px;
+  --mobile-h4-size: 29px;
+  --mobile-h5-size: 20px;
+  --mobile-h6-size: 17px;
+  --mobile-body-size: 14px;
+
+  /* Line height*/
+  --desk-h1-line-height:1.2;
+  --desk-h2-line-height:1.2;
+  --desk-h3-line-height:1.2;
+  --desk-h4-line-height:1.2;
+  --desk-h5-line-height:1.2;
+  --desk-h6-line-height:1.2;
+  --desk-body-line-height:1.4;
+
+  /* Font weight*/
+  --desk-h1-weight:500;
+  --desk-h2-weight:500;
+  --desk-h3-weight:500;
+  --desk-h4-weight:500;
+  --desk-h5-weight:500;
+  --desk-h6-weight:500;
+  --desk-body-weight:400;
+
+
+  /* Tamanhos de fontes mobile*/
+  --mobile-h1: 42px, 1.2, 500;
+  --mobile-h2: 35px, 1.2, 500;
+  --mobile-h3: 29px, 1.2, 500;
+  --mobile-h4: 24px, 1.2, 500;
+  --mobile-h5: 20px, 1.2, 500;
+  --mobile-h6: 17px, 1.2, 500;
+  --mobile-body: 14px, 1.4, 400;
+  
+
+  /* spacing*/
+  --space-xxs: 5px;
+  --space-xs: 8px;
+  --space-s: 13px;
+  --space-m: 21px;
+  --space-l: 34px;
+  --space-xl: 55px;
+  --space-xxl: 81px;
+}
+
+
+
+
+
+
+
+
