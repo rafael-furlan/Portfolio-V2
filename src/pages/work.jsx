@@ -22,7 +22,7 @@ function WorkPage() {
     <>
     <Helmet>
         <link rel="icon" href="/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
-        <title>my portfolio website</title>
+        <title>Rafael Furlan</title>
     </Helmet>
 
     <CustomCursor />
