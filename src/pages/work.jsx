@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
 
@@ -20,7 +21,7 @@ function WorkPage() {
   return (
     <>
     <Helmet>
-        <link rel="icon" href="/Resources/images/favicon-fractal.svg" type="image/svg+xml" />
+        <link rel="icon" href="public/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
         <title>my portfolio website</title>
     </Helmet>
 

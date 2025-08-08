@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
+    "start": "react-scripts start",
     "build": "vite build",
+    "test": "react-scripts test",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-helmet": "^6.1.0"
   }
 }
