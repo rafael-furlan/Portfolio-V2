@@ -30,6 +30,8 @@ function HeaderButton2() {
     switch (activeSection) {
       case 'main':
         return 'fill-gray-800';
+      case 'heading':
+        return 'fill-gray-800';
       case 'grid':
         return 'fill-gray-50';
       default:
@@ -40,7 +42,10 @@ function HeaderButton2() {
   return (
     <div 
       onClick={handleClick} 
-      className="flex items-center justify-center min-w-[50px] max-w-[50px] min-h-[50px] max-h-[50px] sm:min-w-[70px] sm:max-w-[70px] sm:min-h-[70px] sm:max-h-[70px] rounded-full bg-gray-600/20 backdrop-blur-md hover:bg-gray-600/40 active:bg-gray-600/60 transition-all duration-300"
+      className="flex items-center justify-center min-w-[50px] 
+      max-w-[50px] min-h-[50px] max-h-[50px] sm:min-w-[70px] sm:max-w-[70px] 
+      sm:min-h-[70px] sm:max-h-[70px] rounded-full bg-gray-600/20 backdrop-blur-md border border-gray-50/20
+      hover:bg-gray-600/40 active:bg-gray-600/60 transition-all duration-300 cursor-none"
     >
       <svg
         width="20"

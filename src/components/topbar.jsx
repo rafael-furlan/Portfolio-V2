@@ -3,6 +3,7 @@ import Avatar from './avatar.jsx'
 import HeaderButton from './headerbutton.jsx';
 import HeaderButton1 from './headerbutton1.jsx';
 import HeaderButton2 from './headerbutton2.jsx';
+import { Link } from 'react-router-dom';
 
 function TopBar() {
   return (

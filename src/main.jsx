@@ -1,10 +1,11 @@
+// main.jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import WorkPage from './pages/work.jsx'
+import App from './app.jsx'  // ← Use ./ não src/
 import '../Styles/global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <WorkPage />
+    <App />
   </React.StrictMode>,
-) 
+)
