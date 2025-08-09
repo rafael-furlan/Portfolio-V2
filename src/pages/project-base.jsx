@@ -24,7 +24,7 @@ return (
     <>
     <Helmet>
         <link rel="icon" href="/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
-        <title>Project Base page</title>
+        <title>Rafael Furlan - Project Base page</title>
     </Helmet>
 
     {!isTouchDevice && <CustomCursor />}
