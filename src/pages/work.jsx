@@ -31,29 +31,29 @@ function WorkPage() {
       <div className='w-full min-h-screen flex flex-col cursor-none bg-gray-50 '>
       <TopBar/>
       
-      <div id="main" className='flex flex-col w-full flex-1 gap-[25px] pt-[120px] pb-0 pr-6 pl-6 sm:pt-[180px] sm:pl-16 sm:pr-16 sm:pb-8 ' data-cursor="scroll">
-        <div className='flex fle-row sm:w-full sm:max-w-[800px]'>
-            <p className='text-gray-800 font-sora font-regular text-md sm:text-lg/9'>
-            Hey, <strong>I'm Rafa!</strong><br></br>I'm a digital product designer and frontend engineering enthusiast<br></br>
-            with 7+ years of design experience. Working across web and mobile design,<br></br>
-            UX projects, and design systems has shaped my belief in holistic design<br></br>
+      <div id="main" className='flex flex-col w-full flex-1 gap-[25px] pt-[160px] pb-0 pr-6 pl-6 sm:pt-[180px] sm:pl-16 sm:pr-16 sm:pb-8 ' data-cursor="scroll">
+        <div className='flex fle-row w-full sm:max-w-[600px]'>
+            <p className='text-gray-800 font-sora font-regular  text-lg/9'>
+            Hey, <strong>I'm Rafa!</strong><br></br> I'm a digital product designer and frontend engineering enthusiast
+            with 7+ years of design experience. Working across web and mobile design,
+            UX projects, and design systems has shaped my belief in holistic design
             —where designers own the entire journey from strategy to implementation.
             </p>
         </div>
       </div>
 
-        <div id="heading" className='flex flex-col w-full pt-12 pb-16' data-cursor="scroll">
+        <div id="heading" className='flex flex-col w-full pt-9 pb-8 sm:pt-12 pb-16' data-cursor="scroll">
 
         <div className='flex flex-row justify-center gap-16 items-baseline'>
             <Marquee autoFill={true}>
               <div className='flex flex-row justify-center ml-8 mr-8'>
-                  <h1 className='text-gray-800 font-sora text-[100px] sm:text-[150px] font-medium tracking-tighter'>Product</h1>
+                  <h1 className='text-gray-800 font-sora text-[120px] sm:text-[150px] font-medium tracking-tighter'>Product</h1>
               </div>
               <div className='flex flex-row justify-center ml-8 mr-8'>
-                  <h1 className='text-gray-800 font-sora text-[100px] sm:text-[150px] font-medium tracking-tighter'>Design</h1>
+                  <h1 className='text-gray-800 font-sora text-[120px] sm:text-[150px] font-medium tracking-tighter'>Design</h1>
               </div>
               <div className='flex flex-row justify-center ml-8 mr-8'>
-                  <h1 className='text-gray-800 font-sora text-[100px] sm:text-[150px] font-medium tracking-tighter'>Engineer</h1>
+                  <h1 className='text-gray-800 font-sora text-[120px] sm:text-[150px] font-medium tracking-tighter'>Engineer</h1>
               </div>
              
             </Marquee>
@@ -77,7 +77,7 @@ function WorkPage() {
       </div>
       
      
-       <div id="bottom" className='flex flex-col sm:flex-row w-full items-start justify-start pl-6 pr-6 pt-8 pb-[50px] gap-[20px] sm"gap-[40px] sm:pl-16 sm:pr-16 sm:pt-[150px] sm:pb-[100px] sm:gap-[100px]' data-cursor="top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+       <div id="bottom" className='flex flex-col sm:flex-row w-full items-start justify-start pl-6 pr-6 pt-[50px] pb-[100px] gap-[20px] sm:pl-16 sm:pr-16 sm:pt-[150px] sm:pb-[100px] sm:gap-[100px]' data-cursor="top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
     
           <div className='flex flex-col gap-2 p-2 items-start'>
             <h3 className='text-gray-500 text-lg'>Based</h3>

@@ -7,7 +7,7 @@ function Avatar() {
     transition-all duration-300 border border-gray-50/20' data-cursor="hidden">
 
     <Link to="/" className='cursor-none'>
-      <div className="min-w-[46px] min-h-[46px] max-w-[46px] max-h-[46px] sm:min-w-[60px] sm:min-h-[60px] sm:max-w-[60px] 
+      <div className="min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] sm:min-w-[60px] sm:min-h-[60px] sm:max-w-[60px] 
       sm:max-h-[60px] bg-[url('/images/portrait/fractal-portrait.jpg')] bg-cover bg-center rounded-full "></div>
     </Link>
     
