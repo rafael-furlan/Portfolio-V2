@@ -33,7 +33,7 @@ return (
 
         <TopBar/>
 
-        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-[160px] pb-[80px] pl-6 pr-6 gap-[40px] sm:pt-[200px] sm:pl-16 sm:pr-16 sm:pb-[120px] sm:gap-[80px]' data-cursor="scroll">
+        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-[160px] pb-[80px] pl-6 pr-6 gap-[40px] sm:pt-[200px] sm:pl-16 sm:pr-16 sm:pb-[120px] sm:gap-[80px] cursor-none' data-cursor="scroll">
             <h6 className='text-[20px]'>Pleez App</h6>
             <h2 className='text-[36px] sm:text-[56px] sm:w-2/3'>Our biggest challenge at FreshDirect was reimagining the shopping cart experience.</h2>
         </div>
@@ -43,7 +43,7 @@ return (
             <img class="block sm:hidden aspect-[4/5] object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
         </div>
 
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-16 sm:pr-16 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
+        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-16 sm:pr-16 sm:pb-[250px] cursor-none items-center cursor-none' data-cursor="scroll">
             <AnimatedContent
                 distance={100}
                 direction="vertical"

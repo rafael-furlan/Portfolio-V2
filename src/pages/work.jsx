@@ -31,7 +31,7 @@ function WorkPage() {
       <div className='w-full min-h-screen flex flex-col cursor-none bg-gray-50 '>
       <TopBar/>
       
-      <div id="main" className='flex flex-col w-full flex-1 gap-[25px] pt-[160px] pb-0 pr-6 pl-6 sm:pt-[180px] sm:pl-16 sm:pr-16 sm:pb-8 ' data-cursor="scroll">
+      <div id="main" className='flex flex-col w-full flex-1 gap-[25px] pt-[160px] pb-0 pr-6 pl-6 sm:pt-[180px] sm:pl-16 sm:pr-16 sm:pb-8 cursor-none ' data-cursor="scroll">
         <div className='flex fle-row w-full sm:max-w-[600px]'>
             <p className='text-gray-800 font-sora font-regular  text-lg/9'>
             Hey, <strong>I'm Rafa!</strong><br></br> I'm a digital product designer and frontend engineering enthusiast
@@ -42,7 +42,7 @@ function WorkPage() {
         </div>
       </div>
 
-        <div id="heading" className='flex flex-col w-full pt-9 pb-8 sm:pt-12 pb-16' data-cursor="scroll">
+        <div id="heading" className='flex flex-col w-full pt-9 pb-8 sm:pt-12 pb-16 cursor-none' data-cursor="scroll">
 
         <div className='flex flex-row justify-center gap-16 items-baseline'>
             <Marquee autoFill={true}>
