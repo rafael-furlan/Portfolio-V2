@@ -1,43 +1,95 @@
 @import "tailwindcss";
 
-/* FORÇA CURSOR NONE - PRIORIDADE MÁXIMA */
+/* FORÇA CURSOR NONE EM ABSOLUTAMENTE TUDO */
+*, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
+  cursor: none !important;
+}
+
+/* Aplica Sora globalmente */
+* {
+  font-family: 'Sora', sans-serif !important;
+}
+
+body {
+  font-family: 'Sora', sans-serif !important;
+  cursor: none !important;
+}
+
+/* Esconde cursor padrão em todos os elementos com prioridade máxima */
 html, body, * {
   cursor: none !important;
 }
 
-/* Aplica Sora globalmente e remove cursor padrão */
-html, body {
-  font-family: 'Sora', sans-serif !important;
-  cursor: none !important;
-}
-
-* {
-  font-family: 'Sora', sans-serif !important;
-  cursor: none !important;
-}
-
-h1, h2, h3, h4, h5, h6, p, span, div {
-  font-family: 'Sora', sans-serif !important;
-}
-
-/* Garante que todos os elementos interativos também tenham cursor none */
-a, button, input, textarea, select, [role="button"], [tabindex] {
-  cursor: none !important;
-}
-
-/* Remove cursor padrão de elementos específicos que podem interferir */
-img, svg, canvas, video {
-  cursor: none !important;
-}
-
-/* Regras ultra-específicas para garantir cursor none */
-#root, #root *, .react-router-link, [data-cursor], [data-cursor] * {
+/* Regras específicas para elementos que podem interferir */
+a, button, input, textarea, select, img, svg, canvas, video, div, span, p, h1, h2, h3, h4, h5, h6 {
   cursor: none !important;
 }
 
 /* Força cursor none em todos os estados */
 *:hover, *:focus, *:active, *:visited {
   cursor: none !important;
+}
+
+/* Regras ultra-específicas para elementos problemáticos */
+svg, path, g, rect, circle, line, polygon, polyline, ellipse, text, tspan, foreignObject {
+  cursor: none !important;
+}
+
+/* Remove cursor de elementos do React Router e outros */
+[data-router-link], .router-link, [role="button"], [tabindex], [onclick] {
+  cursor: none !important;
+}
+
+/* Força cursor none em elementos específicos do Tailwind */
+.cursor-pointer, .cursor-default, .cursor-auto, .cursor-move, .cursor-grab, .cursor-grabbing, .cursor-text, .cursor-help, .cursor-wait, .cursor-progress, .cursor-not-allowed, .cursor-zoom-in, .cursor-zoom-out {
+  cursor: none !important;
+}
+
+/* Força cursor none em elementos que podem estar sendo criados dinamicamente */
+[style*="cursor"], [class*="cursor"] {
+  cursor: none !important;
+}
+
+/* Regra final para garantir que nada escape */
+html, body, #root, #root * {
+  cursor: none !important;
+}
+
+/* Solução específica para Chrome */
+@supports (-webkit-appearance: none) {
+  *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
+    cursor: none !important;
+    -webkit-cursor: none !important;
+  }
+  
+  html, body, #root, #root * {
+    cursor: none !important;
+    -webkit-cursor: none !important;
+  }
+}
+
+/* Solução ultra-específica para Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
+    cursor: none !important;
+    -webkit-cursor: none !important;
+  }
+  
+  html, body, #root, #root * {
+    cursor: none !important;
+    -webkit-cursor: none !important;
+  }
+  
+  /* Força cursor none em elementos específicos do Chrome */
+  svg, path, g, rect, circle, line, polygon, polyline, ellipse, text, tspan, foreignObject,
+  a, button, input, textarea, select, img, canvas, video, div, span, p, h1, h2, h3, h4, h5, h6 {
+    cursor: none !important;
+    -webkit-cursor: none !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div {
+  font-family: 'Sora', sans-serif !important;
 }
 
 /* Variáveis CSS para as cores midnight */

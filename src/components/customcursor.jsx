@@ -66,9 +66,7 @@ export default function CustomCursor() {
   const textColor = pressed ? '#fff' : '#fff';
 
   // Só mostra depois de inicializado e se não estiver oculto
-  if (hidden || !initialized) {
-    return null;
-  }
+  if (hidden || !initialized) return null;
 
   return (
     <div
@@ -76,8 +74,7 @@ export default function CustomCursor() {
       duration-100 ease-out w-[80px] h-[80px] backdrop-blur-md font-sora font-medium text-sm text-gray-50 tracking-widest border border-gray-50/20"
       style={{
         background,
-        transform: `translate(${position.x - size / 2}px, ${position.y - size / 2}px)`,
-        cursor: 'none'
+        transform: `translate(${position.x - size / 2}px, ${position.y - size / 2}px)`
       }}
     >
       {text}
