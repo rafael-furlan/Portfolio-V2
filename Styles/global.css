@@ -1,16 +1,28 @@
 @import "tailwindcss";
 
-/* Aplica Sora globalmente */
-* {
+/* Aplica Sora globalmente e remove cursor padrão */
+html, body {
   font-family: 'Sora', sans-serif !important;
+  cursor: none !important;
 }
 
-body {
+* {
   font-family: 'Sora', sans-serif !important;
+  cursor: none !important;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, div {
   font-family: 'Sora', sans-serif !important;
+}
+
+/* Garante que todos os elementos interativos também tenham cursor none */
+a, button, input, textarea, select, [role="button"], [tabindex] {
+  cursor: none !important;
+}
+
+/* Remove cursor padrão de elementos específicos que podem interferir */
+img, svg, canvas, video {
+  cursor: none !important;
 }
 
 /* Variáveis CSS para as cores midnight */
