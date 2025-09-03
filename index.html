@@ -17,10 +17,25 @@
       .animate-marquee {
         animation: marquee 20s linear infinite;
       }
+      
+      /* FORÇA CURSOR NONE EM TUDO - PRIORIDADE MÁXIMA */
+      html, body, * {
+        cursor: none !important;
+      }
+      
+      /* Regras específicas para elementos que podem interferir */
+      a, button, input, textarea, select, [role="button"], [tabindex], img, svg, canvas, video, div, span, p, h1, h2, h3, h4, h5, h6 {
+        cursor: none !important;
+      }
+      
+      /* Remove cursor de elementos do React Router */
+      [data-router-link], .router-link {
+        cursor: none !important;
+      }
     </style>
 </head>
-<body>
-    <div id="root"></div>
+<body style="cursor: none !important;">
+    <div id="root" style="cursor: none !important;"></div>
     <script type="module" src="/src/main.jsx"></script>
 </body>
 </html> 

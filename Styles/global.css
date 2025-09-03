@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* FORÇA CURSOR NONE - PRIORIDADE MÁXIMA */
+html, body, * {
+  cursor: none !important;
+}
+
 /* Aplica Sora globalmente e remove cursor padrão */
 html, body {
   font-family: 'Sora', sans-serif !important;
@@ -22,6 +27,16 @@ a, button, input, textarea, select, [role="button"], [tabindex] {
 
 /* Remove cursor padrão de elementos específicos que podem interferir */
 img, svg, canvas, video {
+  cursor: none !important;
+}
+
+/* Regras ultra-específicas para garantir cursor none */
+#root, #root *, .react-router-link, [data-cursor], [data-cursor] * {
+  cursor: none !important;
+}
+
+/* Força cursor none em todos os estados */
+*:hover, *:focus, *:active, *:visited {
   cursor: none !important;
 }
 

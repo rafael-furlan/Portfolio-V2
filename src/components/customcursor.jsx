@@ -4,7 +4,7 @@ export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [text, setText] = useState('');
   const [pressed, setPressed] = useState(false);
-  const [hidden, setHidden] = useState(true); // Começa oculto
+  const [hidden, setHidden] = useState(false); // Começa visível
   const [initialized, setInitialized] = useState(false); // Nova flag
 
   useEffect(() => {
