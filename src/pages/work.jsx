@@ -91,7 +91,7 @@ function WorkPage() {
           
           <div className='flex flex-col gap-2 p-2 items-start'>
             <h3 className='text-gray-500 text-lg'>Contact</h3>
-            <h2 className='text-gray-700 text-xl font-medium'>rafaelfurlan@gmail.com</h2>
+            <h2 className='text-gray-700 text-xl font-medium'>rafaelfurlan.design@gmail.com</h2>
           </div>
     
       </div>
