@@ -33,17 +33,17 @@ return (
 
         <TopBar/>
 
-        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-[160px] pb-[80px] pl-6 pr-6 gap-[40px] sm:pt-[200px] sm:pl-16 sm:pr-16 sm:pb-[120px] sm:gap-[80px] cursor-none' data-cursor="scroll">
+        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-12 sm:pr-12 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
             <h6 className='text-[20px]'>Pleez App</h6>
-            <h2 className='text-[36px] sm:text-[56px] sm:w-2/3'>Our biggest challenge at FreshDirect was reimagining the shopping cart experience.</h2>
+            <h2 className='text-[36px] sm:text-[56px] sm:w-4/5'>Our biggest challenge at FreshDirect was reimagining the shopping cart experience.</h2>
         </div>
 
-        <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-16 sm:pr-16 justify-center items-center cursor-none' data-cursor="scroll">
-            <img class="hidden sm:block sm:aspect-video object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
-            <img class="block sm:hidden aspect-[4/5] object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
+        <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+            <img class="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
+            <img class="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
         </div>
 
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-16 sm:pr-16 sm:pb-[250px] cursor-none items-center cursor-none' data-cursor="scroll">
+        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center cursor-none' data-cursor="scroll">
             <AnimatedContent
                 distance={100}
                 direction="vertical"
@@ -62,12 +62,12 @@ return (
             </AnimatedContent>
         </div>
 
-        <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-16 sm:pr-16 justify-center items-center cursor-none' data-cursor="scroll">
-                <img class="hidden sm:block sm:aspect-video object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
-                <img class="block sm:hidden aspect-[4/5] object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
+        <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                <img class="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
+                <img class="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
         </div>
 
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-16 sm:pr-16 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
+        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
             <AnimatedContent className=""
                 distance={100}
                 direction="vertical"
@@ -86,12 +86,12 @@ return (
             </AnimatedContent>
         </div>
 
-        <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-16 sm:pr-16 justify-center items-center cursor-none' data-cursor="scroll">
-                <img class="hidden sm:block sm:aspect-video object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
-                <img class="block sm:hidden aspect-[4/5] object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
+        <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                <img class="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
+                <img class="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
         </div>
         
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-16 sm:pr-16 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
+        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
             <AnimatedContent
                 distance={100}
                 direction="vertical"
@@ -110,9 +110,9 @@ return (
             </AnimatedContent>
         </div>
 
-        <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-16 sm:pr-16 justify-center items-center cursor-none' data-cursor="scroll">
-                <img class="hidden sm:block sm:aspect-video object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
-                <img class="block sm:hidden aspect-[4/5] object-cover" src="/images/project-placeholders/img-small-ret.jpg" /> 
+        <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                <img class="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
+                <img class="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/img-small-ret.jpg" /> 
         </div>
 
         <div className='flex flex-row justify-center gap-16 pt-[160px] pb-[80px] sm:pt-[250px] sm:pb-[100px] items-baseline' data-cursor="scroll">
@@ -130,18 +130,18 @@ return (
             </Marquee>
         </div>
 
-        <div className='grid gri-cols-1 pl-6 pr-6 gap-4 sm:grid-cols-3 pb-[80px] sm:pb-[150px] sm:pl-16 sm:pr-16 sm:gap-4' data-cursor="view">
+        <div className='grid gri-cols-1 pl-6 pr-6 gap-4 sm:grid-cols-3 pb-[80px] sm:pb-[150px] sm:pl-12 sm:pr-12 sm:gap-4' data-cursor="view">
 
             <Link to="/project-base" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/img-6.png)] w-full aspect-square flex items-center justify-center' ></div>
+            <div className='bg-[url(/images/project-placeholders/img-6.png)] w-full aspect-square flex items-center justify-center bg-cover rounded-xl cursor-none' ></div>
             </Link>
 
             <Link to="/project-base" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/img-7.png)] w-full aspect-square flex items-center justify-center cursor-none' ></div>
+            <div className='bg-[url(/images/project-placeholders/img-7.png)] w-full aspect-square flex items-center justify-center bg-cover rounded-xl cursor-none' ></div>
             </Link>
             
             <Link to="/project-base" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/img-5.png)] w-full aspect-square flex items-center justify-center cursor-none' ></div>
+            <div className='bg-[url(/images/project-placeholders/img-5.png)] w-full aspect-square flex items-center justify-center bg-cover rounded-xl cursor-none' ></div>
             </Link>
             
         </div>

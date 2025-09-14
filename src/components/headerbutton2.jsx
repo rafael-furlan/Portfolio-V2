@@ -35,7 +35,7 @@ function HeaderButton2() {
       case 'grid':
         return 'fill-gray-50';
       default:
-        return 'fill-gray-800'; // cor padrão
+        return 'fill-gray-800'; 
     }
   };
 
