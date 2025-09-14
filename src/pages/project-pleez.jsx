@@ -59,16 +59,16 @@ return (
 
         <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
             <AnimatedContent
-                distance={100}
+                distance={50}
                 direction="vertical"
                 reverse={false}
                 duration={0.8}
-                ease="power3.out"
+                ease="power2.out"
                 initialOpacity={0.0}
                 animateOpacity
                 scale={1}
-                threshold={0.1}
-                delay={0.3}
+                threshold={0.2}
+                delay={0.8}
             >
                 <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>At Pleez app, the main goal was to simplify the ordering experience,
                  removing the dependence on human attendants for simple requests, 
@@ -85,16 +85,16 @@ return (
 
         <div className='w-full flex flex-row-reverse pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
             <AnimatedContent className="w-2/3"
-                distance={100}
+                distance={50}
                 direction="vertical"
                 reverse={false}
                 duration={0.8}
-                ease="power3.out"
+                ease="power2.out"
                 initialOpacity={0.0}
                 animateOpacity
                 scale={1}
-                threshold={0.1}
-                delay={0.3}
+                threshold={0.2}
+                delay={0.8}
                 
 
             >
@@ -111,16 +111,16 @@ return (
         
         <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
             <AnimatedContent
-                distance={100}
+                distance={50}
                 direction="vertical"
                 reverse={false}
                 duration={0.8}
-                ease="power3.out"
+                ease="power2.out"
                 initialOpacity={0.0}
                 animateOpacity
                 scale={1}
-                threshold={0.1}
-                delay={0.3}
+                threshold={0.2}
+                delay={0.8}
             >
                 <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>Operators gained clear visibility into every stage of 
                 the process, making it easier to track, prioritize, and complete requests in real time. This improved speed and accuracy,
@@ -137,16 +137,16 @@ return (
 
         <div className='w-full flex flex-row-reverse pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
             <AnimatedContent className="w-2/3"
-                distance={100}
+                distance={50}
                 direction="vertical"
                 reverse={false}
                 duration={0.8}
-                ease="power3.out"
+                ease="power2.out"
                 initialOpacity={0.0}
                 animateOpacity
                 scale={1}
-                threshold={0.1}
-                delay={0.3}
+                threshold={0.2}
+                delay={0.8}
                 
 
             >
