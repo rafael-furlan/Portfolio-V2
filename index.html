@@ -18,13 +18,13 @@
         animation: marquee 20s linear infinite;
       }
       
-      /* FORÇA CURSOR NONE - PRIORIDADE MÁXIMA */
+     
       html, body, *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
         cursor: none !important;
         -webkit-cursor: none !important;
       }
       
-      /* Regras ultra-específicas para elementos problemáticos */
+      
       svg, path, g, rect, circle, line, polygon, polyline, ellipse, text, tspan, foreignObject,
       a, button, input, textarea, select, img, canvas, video, div, span, p, h1, h2, h3, h4, h5, h6,
       [data-router-link], .router-link, [role="button"], [tabindex], [onclick],
@@ -33,7 +33,7 @@
         -webkit-cursor: none !important;
       }
       
-      /* Solução específica para Chrome - força cursor none em todos os elementos */
+      
       @media screen and (-webkit-min-device-pixel-ratio: 0) {
         *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
           cursor: none !important;
@@ -42,24 +42,24 @@
       }
     </style>
     <script>
-      // Detecção de navegador
+      
       const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
       
-      // Força cursor none em todos os elementos via JavaScript - VERSÃO ULTRA AGRESSIVA PARA CHROME
+      
       function forceCursorNone() {
-        // Força em todos os elementos
+        
         const allElements = document.querySelectorAll('*');
         allElements.forEach(el => {
           el.style.cursor = 'none';
           el.style.setProperty('cursor', 'none', 'important');
           
-          // Solução ultra-específica para Chrome
+         
           if (isChrome) {
             el.style.setProperty('-webkit-cursor', 'none', 'important');
             el.style.setProperty('cursor', 'none', 'important');
             el.style.setProperty('cursor', 'none', 'important');
             
-            // Força em todos os estados
+            
             ['hover', 'focus', 'active', 'visited', 'link', 'target'].forEach(state => {
               el.style.setProperty(`cursor:${state}`, 'none', 'important');
             });
