@@ -78,7 +78,7 @@ return (
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className=' w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/plez-img2-filme.mp4" type="video/mp4"></source> 
+                    <source src="public/images/project-placeholders/pleez-app-interaction.mp4" type="video/mp4"></source> 
                 </video>
                 
         </div>
@@ -130,7 +130,7 @@ return (
 
         <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className=' w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/pleez-4-animation.mp4" type="video/mp4"></source> 
+                    <source src="/images/project-placeholders/pleez-animation-fixed.mp4" type="video/mp4"></source> 
                 </video>
                 
         </div>
