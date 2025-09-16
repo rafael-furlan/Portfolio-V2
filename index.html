@@ -1,146 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio v2</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @keyframes marquee {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-      .animate-marquee {
-        animation: marquee 20s linear infinite;
-      }
-      
-     
-      html, body, *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
-        cursor: none !important;
-        -webkit-cursor: none !important;
-      }
-      
-      
-      svg, path, g, rect, circle, line, polygon, polyline, ellipse, text, tspan, foreignObject,
-      a, button, input, textarea, select, img, canvas, video, div, span, p, h1, h2, h3, h4, h5, h6,
-      [data-router-link], .router-link, [role="button"], [tabindex], [onclick],
-      .cursor-pointer, .cursor-default, .cursor-auto, .cursor-move, .cursor-grab, .cursor-grabbing {
-        cursor: none !important;
-        -webkit-cursor: none !important;
-      }
-      
-      
-      @media screen and (-webkit-min-device-pixel-ratio: 0) {
-        *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
-          cursor: none !important;
-          -webkit-cursor: none !important;
-        }
-      }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rafael Furlan</title>
+    <style> 
+    @keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } } 
+    .animate-marquee { animation: marquee 20s linear infinite; } 
     </style>
-    <script>
-      
-      const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-      
-      
-      function forceCursorNone() {
-        
-        const allElements = document.querySelectorAll('*');
-        allElements.forEach(el => {
-          el.style.cursor = 'none';
-          el.style.setProperty('cursor', 'none', 'important');
-          
-         
-          if (isChrome) {
-            el.style.setProperty('-webkit-cursor', 'none', 'important');
-            el.style.setProperty('cursor', 'none', 'important');
-            el.style.setProperty('cursor', 'none', 'important');
-            
-            
-            ['hover', 'focus', 'active', 'visited', 'link', 'target'].forEach(state => {
-              el.style.setProperty(`cursor:${state}`, 'none', 'important');
-            });
-          }
-        });
-        
-        // Força no body e html
-        document.body.style.cursor = 'none';
-        document.body.style.setProperty('cursor', 'none', 'important');
-        document.documentElement.style.cursor = 'none';
-        document.documentElement.style.setProperty('cursor', 'none', 'important');
-        
-        // Solução ultra-específica para Chrome
-        if (isChrome) {
-          document.body.style.setProperty('-webkit-cursor', 'none', 'important');
-          document.documentElement.style.setProperty('-webkit-cursor', 'none', 'important');
-          
-          // Força em todos os estados do body e html
-          [document.body, document.documentElement].forEach(el => {
-            ['hover', 'focus', 'active', 'visited', 'link', 'target'].forEach(state => {
-              el.style.setProperty(`cursor:${state}`, 'none', 'important');
-            });
-          });
-        }
-        
-        // Força em pseudo-elementos via CSS
-        const style = document.createElement('style');
-        style.textContent = `
-          *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
-            cursor: none !important;
-            ${isChrome ? '-webkit-cursor: none !important;' : ''}
-          }
-          
-          ${isChrome ? `
-          @media screen and (-webkit-min-device-pixel-ratio: 0) {
-            *, *::before, *::after, *:hover, *:focus, *:active, *:visited, *:link, *:target {
-              cursor: none !important;
-              -webkit-cursor: none !important;
-            }
-          }
-          ` : ''}
-        `;
-        document.head.appendChild(style);
-      }
-      
-      // Executa imediatamente
-      forceCursorNone();
-      
-      // Executa quando o DOM estiver pronto
-      document.addEventListener('DOMContentLoaded', forceCursorNone);
-      
-      // Executa quando novos elementos são adicionados
-      const observer = new MutationObserver(forceCursorNone);
-      observer.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        attributeFilter: ['style', 'class']
-      });
-      
-      // Executa em intervalos mais frequentes para Chrome
-      const interval = isChrome ? 25 : 50;
-      setInterval(forceCursorNone, interval);
-      
-      // Executa em eventos de mouse
-      document.addEventListener('mousemove', forceCursorNone);
-      document.addEventListener('mouseenter', forceCursorNone);
-      document.addEventListener('mouseleave', forceCursorNone);
-      
-      // Solução específica para Chrome - força cursor none em eventos específicos
-      if (isChrome) {
-        document.addEventListener('mouseover', forceCursorNone);
-        document.addEventListener('mouseout', forceCursorNone);
-        document.addEventListener('mousedown', forceCursorNone);
-        document.addEventListener('mouseup', forceCursorNone);
-        document.addEventListener('click', forceCursorNone);
-      }
-    </script>
-</head>
-<body style="cursor: none !important;">
-    <div id="root" style="cursor: none !important;"></div>
+    <link rel="icon" href="/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
+    <!-- Nada de CDN do Tailwind aqui. O CSS virá do bundle (PostCSS). -->
+  </head>
+  <body>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-</body>
-</html> 
+  </body>
+</html>

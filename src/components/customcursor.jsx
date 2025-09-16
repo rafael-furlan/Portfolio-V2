@@ -4,8 +4,8 @@ export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [text, setText] = useState('');
   const [pressed, setPressed] = useState(false);
-  const [hidden, setHidden] = useState(false); // Começa visível
-  const [initialized, setInitialized] = useState(false); // Nova flag
+  const [hidden, setHidden] = useState(false);
+  const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
     const updateCursorText = (e) => {
@@ -13,18 +13,20 @@ export default function CustomCursor() {
       const clientY = e?.clientY ?? position.y;
       const el = document.elementFromPoint(clientX, clientY);
 
-      if (el?.closest('[data-cursor="hidden"]') || el?.closest('.cursor-hidden')) {
+      if (!el) return; // 🔒 evita erro se não encontrar nada
+
+      if (el.closest('[data-cursor="hidden"]') || el.closest('.cursor-hidden')) {
         setHidden(true);
         return;
       } else {
         setHidden(false);
       }
 
-      if (el?.closest('[data-cursor="scroll"]')) {
+      if (el.closest('[data-cursor="scroll"]')) {
         setText('Scroll');
-      } else if (el?.closest('[data-cursor="view"]')) {
+      } else if (el.closest('[data-cursor="view"]')) {
         setText('View');
-      } else if (el?.closest('[data-cursor="top"]')) {
+      } else if (el.closest('[data-cursor="top"]')) {
         setText('Top');
       } else {
         setText('');
@@ -32,9 +34,7 @@ export default function CustomCursor() {
     };
 
     const move = (e) => {
-      if (!initialized) {
-        setInitialized(true); // Marca como inicializado no primeiro movimento
-      }
+      if (!initialized) setInitialized(true);
       setPosition({ x: e.clientX, y: e.clientY });
       updateCursorText(e);
     };
@@ -42,12 +42,12 @@ export default function CustomCursor() {
     const handleDown = (e) => {
       const el = document.elementFromPoint(e.clientX, e.clientY);
       const isScrollArea = el?.closest('[data-cursor="scroll"]');
-      if (!isScrollArea) {
-        setPressed(true);
-      }
+      if (!isScrollArea) setPressed(true);
     };
+
     const handleUp = () => setPressed(false);
 
+    // ✅ event listeners só uma vez no mount
     window.addEventListener('mousemove', move);
     window.addEventListener('scroll', updateCursorText);
     window.addEventListener('mousedown', handleDown);
@@ -59,13 +59,13 @@ export default function CustomCursor() {
       window.removeEventListener('mousedown', handleDown);
       window.removeEventListener('mouseup', handleUp);
     };
-  }, [position, initialized]);
+  }, [initialized]); // 🔒 não depende de position → não recria a cada movimento
 
-  const size = pressed ? 80 : 80;
-  const background = pressed ? 'rgba(51, 65, 85, 0.7)' : 'rgba(51, 65, 85, 0.4)';
-  const textColor = pressed ? '#fff' : '#fff';
+  const size = 80;
+  const background = pressed
+    ? 'rgba(51, 65, 85, 0.7)'
+    : 'rgba(51, 65, 85, 0.4)';
 
-  // Só mostra depois de inicializado e se não estiver oculto
   if (hidden || !initialized) return null;
 
   return (
@@ -81,3 +81,4 @@ export default function CustomCursor() {
     </div>
   );
 }
+

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
+import AnimatedContent from '../components/animatedcontent.jsx';
+import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
-import AnimatedContent from '../components/animatedcontent.jsx'
 
 
 function ProjectSuperfiliate() {
@@ -22,11 +22,6 @@ function ProjectSuperfiliate() {
 
 return (
     <>
-    <Helmet>
-        <link rel="icon" href="/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
-        <title>Superfiliate Design System</title>
-    </Helmet>
-
     {!isTouchDevice && <CustomCursor />}
 
     <div className='w-full min-h-screen flex flex-col cursor-none bg-gray-50 scroll-smooth'>
@@ -133,7 +128,7 @@ return (
             </AnimatedContent>
         </div>
 
-        <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+        <div id="img-4" className='hidden w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
                     <source src="/images/project-placeholders/pleez-animation-fixed.mp4" type="video/mp4" />
                 </video>

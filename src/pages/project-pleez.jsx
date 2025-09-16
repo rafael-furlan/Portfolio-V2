@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
 import { Link } from 'react-router-dom';
@@ -22,10 +21,6 @@ function ProjectPleez() {
 
 return (
     <>
-    <Helmet>
-        <link rel="icon" href="/images/favicon/favicon-fractal.svg" type="image/svg+xml" />
-        <title>Pleez App</title>
-    </Helmet>
 
     {!isTouchDevice && <CustomCursor />}
 
