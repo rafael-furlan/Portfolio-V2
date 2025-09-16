@@ -4,7 +4,7 @@ import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
 import { Link } from 'react-router-dom';
 import AnimatedContent from '../components/animatedcontent.jsx'
-import Marquee from "react-fast-marquee";
+
 
 function ProjectSuperfiliate() {
 
