@@ -69,8 +69,8 @@ function WorkPage() {
         <div className='bg-[url(/images/project-placeholders/pleez-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg'></div>
         </Link>
 
-        <Link to="/project-pleez" className='cursor-none'>
-          <div className='bg-[url(/images/project-placeholders/viplan-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg'></div>        
+        <Link to="/project-superfiliate-ds" className='cursor-none'>
+          <div className='bg-[url(public/images/project-placeholders/superfiliate-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg'></div>        
         </Link>
 
         <Link to="/project-pleez" className='cursor-none'>
