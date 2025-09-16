@@ -70,7 +70,7 @@ function WorkPage() {
         </Link>
 
         <Link to="/project-superfiliate-ds" className='cursor-none'>
-          <div className='bg-[url(public/images/project-placeholders/superfiliate-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg'></div>        
+          <div className='bg-[url(/images/project-placeholders/superfiliate-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg'></div>        
         </Link>
 
         <Link to="/project-pleez" className='cursor-none'>
