@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
-import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
+import AnimatedContent from '../components/animatedcontent.jsx'
+import Marquee from "react-fast-marquee";
 
 function WorkPage() {
 
@@ -63,7 +64,7 @@ function WorkPage() {
       </div>
       
      
-      <div id="grid" className='grid gri-cols-1 pt-8 pl-6 pr-6 gap-4 sm:pt-0 sm:grid-cols-2 sm:pr-12 sm:pl-12 sm:gap-4' data-cursor="view">
+      <div id="grid" className='grid grid-cols-1 pt-8 pl-6 pr-6 gap-4 sm:pt-0 sm:grid-cols-2 sm:pr-12 sm:pl-12 sm:gap-4' data-cursor="view">
 
         <Link to="/project-pleez" className='cursor-none'>
         <div className='bg-[url(/images/project-placeholders/pleez-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg'></div>

@@ -50,8 +50,8 @@ return (
                 delay={0.3}
             >
                 <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/superfiliate-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/superfiliate-img-1.jpg" /> 
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-img-1.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-img-1.jpg" /> 
                 </div>
             </AnimatedContent>
 
@@ -79,7 +79,7 @@ return (
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/superfiliate-img-2.2.mp4" type="video/mp4" />
+                    <source src="public/images/project-placeholders/superfiliate-img-2.2.mp4" type="video/mp4" />
                 </video>
                 
         </div>
@@ -109,7 +109,7 @@ return (
 
         <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/superfiliate-dark-light.mp4" type="video/mp4" />
+                    <source src="public/images/project-placeholders/superfiliate-dark-light.mp4" type="video/mp4" />
                 </video>
                 
         </div>
@@ -133,7 +133,7 @@ return (
             </AnimatedContent>
         </div>
 
-        <div id="img-4" className=' hidden w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+        <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
                     <source src="/images/project-placeholders/pleez-animation-fixed.mp4" type="video/mp4" />
                 </video>
@@ -155,15 +155,15 @@ return (
                 
 
             >
-                <p className='hidden text-[24px] leading-[150%] sm:text-[36px] '>Since video and images are key in the creator ecosystem, 
+                <p className=' text-[24px] leading-[150%] sm:text-[36px] '>Since video and images are key in the creator ecosystem, 
                     I created, designed, and documented the media card component for the new social listing feature. The component 
                     was later scaled and updated to support multiple other features across the app.</p>
             </AnimatedContent>
         </div>
 
-        <div id="img-5" className=' w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/superfiliate-final-img.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/superfiliate-final-img.jpg" /> 
+        <div id="img-5" className=' Zw-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-final-img.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-final-img.jpg" /> 
                 </div>
 
         <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
