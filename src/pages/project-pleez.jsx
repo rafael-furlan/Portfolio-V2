@@ -30,7 +30,7 @@ return (
 
         <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-12 sm:pr-12 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
             <h6 className='text-[20px]'>Pleez App</h6>
-            <h2 className='text-[36px] sm:text-[56px] sm:w-4/5'>Designed the startup's first MVP to validate its value proposition</h2>
+            <h2 className='text-[36px] sm:text-[56px] sm:w-4/5'>Designed the Startup’s First MVP</h2>
         </div>
         <AnimatedContent
                 distance={20}
