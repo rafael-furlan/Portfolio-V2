@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -24,7 +25,24 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: {
+                filter: (url, resourcePath) => {
+                  // Don't process URLs that start with /images/ or /resources/
+                  if (url.startsWith('/images/') || url.startsWith('/resources/')) {
+                    return false;
+                  }
+                  return true;
+                },
+              },
+            },
+          },
+          'postcss-loader',
+        ],
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
@@ -48,6 +66,18 @@ module.exports = {
       filename: 'index.html',
       inject: true,
       scriptLoading: 'blocking',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'public/images',
+          to: 'images',
+        },
+        {
+          from: 'public/resources',
+          to: 'resources',
+        },
+      ],
     }),
   ],
   resolve: {
