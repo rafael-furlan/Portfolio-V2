@@ -6,5 +6,13 @@ export default defineConfig({
   root: '.',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  server: {
+    port: 3000,
   },
 }) 
