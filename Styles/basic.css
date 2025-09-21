@@ -1,0 +1,75 @@
+/* Basic styles without Tailwind processing */
+* {
+  font-family: 'Sora', sans-serif !important;
+}
+
+body {
+  font-family: 'Sora', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div {
+  font-family: 'Sora', sans-serif !important;
+}
+
+/* Font faces */
+@font-face {
+  font-family: 'Sora';
+  src: url("../public/fonts/Fonts/WEB/fonts/Sora-Regular.woff2") format("woff2"),
+       url("../public/fonts/Fonts/WEB/fonts/Sora-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url("../public/fonts/Fonts/WEB/fonts/Sora-SemiBold.woff2") format("woff2"),
+       url("../public/fonts/Fonts/WEB/fonts/Sora-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url("../public/fonts/Fonts/WEB/fonts/Sora-Bold.woff2") format("woff2"),
+       url("../public/fonts/Fonts/WEB/fonts/Sora-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Basic utility classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.min-h-screen { min-height: 100vh; }
+
+.p-4 { padding: 1rem; }
+.p-8 { padding: 2rem; }
+.m-4 { margin: 1rem; }
+.m-8 { margin: 2rem; }
+
+.text-white { color: white; }
+.text-black { color: black; }
+.bg-black { background-color: black; }
+.bg-white { background-color: white; }
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
