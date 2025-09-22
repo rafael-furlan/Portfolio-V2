@@ -4,6 +4,7 @@ import CustomCursor from '../components/customcursor.jsx';
 import AnimatedContent from '../components/animatedcontent.jsx';
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
+import Lottie from 'lottie-react';
 
 
 function ProjectSuperfiliate() {
@@ -13,10 +14,17 @@ function ProjectSuperfiliate() {
       }, []);
 
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [lottieData, setLottieData] = useState(null);
 
   useEffect(() => {
     // Detecta se é dispositivo touch
     setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    
+    // Load Lottie animation data
+    fetch('/images/project-placeholders/superfiliate/sf-ds-bw-img.json')
+      .then(response => response.json())
+      .then(data => setLottieData(data))
+      .catch(error => console.error('Error loading Lottie animation:', error));
     
     }, []);
 
@@ -30,7 +38,7 @@ return (
 
         <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-12 sm:pr-12 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
             <h6 className='text-[20px]'>Superfiliate Design System</h6>
-            <h2 className='text-[36px] sm:text-[56px] sm:w-4/5'>From Tokens to Dark Mode — How I Led First Design System Initiatives</h2>
+            <h2 className='text-[36px] sm:text-[56px]'>Building the Superfiliate Design System</h2>
         </div>
         <AnimatedContent
                 distance={20}
@@ -45,115 +53,89 @@ return (
                 delay={0.3}
             >
                 <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-img-1.jpg" /> 
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/superfiliate/sf-ds-img-1.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/superfiliate/sf-ds-img-1.jpg" /> 
                 </div>
             </AnimatedContent>
 
         
 
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>At Superfiliate, I led the initiative to build the company’s design 
-                system from the ground up. My work spanned from defining the initial token structure to establishing component standards and extending 
-                the system to support dark mode. This foundation not only improved design consistency but also created a scalable framework for 
-                future design work.</p>
-            </AnimatedContent>
+        <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-12 sm:pr-12 sm:pb-[176px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>The Challenge</h2>
+            <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            When I joined Superfiliate, the company had no design system in place. Early styles existed, but there was no scalable framework to ensure consistency as the product grew.<br></br><br></br>
+            With over 500 active brands using the app, designers were creating different page layouts while engineers continued relying on outdated patterns from the company’s early days. This created friction, inconsistencies, and a lack of clarity across the product experience.
+            </p>
         </div>
+
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="public/images/project-placeholders/superfiliate-img-2.2.mp4" type="video/mp4" />
+                    <source src="/images/project-placeholders/superfiliate-img-2.2.mp4" type="video/mp4" />
                 </video>
                 
         </div>
 
-        <div className='w-full flex flex-row-reverse pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent className="w-2/3"
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-                
-
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] '>Building on the core style foundation we had at the start of
-                     the company, I defined a semantic structure that allowed the design team to scale the product with consistency. 
-                     I introduced a global token system covering color and spacing, and from there established a semantic layer 
-                     with surface, typography, border, and icon tokens. For spacing, I separated tokens into gap and padding 
-                     to ensure clarity and reusability.</p>
-            </AnimatedContent>
+        <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-12 sm:pr-12 sm:pb-[176px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Defining the Foundation</h2>
+            <p className='text-[24px] leading-[150%] sm:w-2/3'>I set out to build the design system from the ground up, starting with a token-based foundation.<br></br><br></br>
+                • Introduced a global token system covering color and spacing.<br></br>
+                • Added a semantic layer with surface, typography, border, and icon tokens.<br></br>
+                • Split spacing into gap and padding tokens for clarity and reusability.<br></br><br></br>
+                This structure created the flexibility needed to support multiple features while maintaining a consistent design language.
+            </p>
         </div>
 
         <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="public/images/project-placeholders/superfiliate-dark-light.mp4" type="video/mp4" />
-                </video>
+                {lottieData ? (
+                            <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
+                                <Lottie 
+                                    animationData={lottieData}
+                                    loop={true}
+                                    autoplay={true}
+                                    className='w-full h-full'
+                                />
+                            </div>
+                        ) : (
+                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
+                        <p className='text-gray-500'>Loading animation...</p>
+                    </div>
+                )}
                 
         </div>
         
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>Using Figma’s variable theming system, I created a framework
-                 that made dark mode implementation almost automatic. After aligning with the engineering team, we introduced a set of specific 
-                 tokens for overlay components, which had been overlooked in the UI and required special attention.</p>
-            </AnimatedContent>
+        <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-12 sm:pr-12 sm:pb-[176px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Designing for Dark Mode</h2>
+            <p className='text-[24px] leading-[150%] sm:w-2/3'>With theming becoming a product priority, I leveraged Figma’s variable system to make dark mode implementation almost automatic.<br></br><br></br>
+
+                Working closely with engineering, I introduced dedicated tokens for overlay components, a previously overlooked area that required extra attention for accessibility and usability.
+            </p>
         </div>
 
-        <div id="img-4" className='hidden w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/pleez-animation-fixed.mp4" type="video/mp4" />
-                </video>
+        <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                {lottieData ? (
+                    <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
+                        <Lottie 
+                            animationData={lottieData}
+                            loop={true}
+                            autoplay={true}
+                            className='w-full h-full'
+                        />
+                    </div>
+                ) : (
+                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
+                        <p className='text-gray-500'>Loading animation...</p>
+                    </div>
+                )}
                 
         </div>
 
-        <div className=' hidden w-full flex flex-row-reverse pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent className="w-2/3"
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-                
-
-            >
-                <p className=' text-[24px] leading-[150%] sm:text-[36px] '>Since video and images are key in the creator ecosystem, 
-                    I created, designed, and documented the media card component for the new social listing feature. The component 
-                    was later scaled and updated to support multiple other features across the app.</p>
-            </AnimatedContent>
+        <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-12 sm:pr-12 sm:pb-[176px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Scaling Layouts Across the Platform</h2>
+            <p className='text-[24px] leading-[150%] sm:w-2/3'>To address the growing divide between design and engineering, I audited the entire product and mapped all existing layouts. From this, I consolidated them into a set of core layouts that were then documented as standards.
+                <br></br><br></br>
+                This gave both teams a clear single source of truth, reducing inconsistencies and speeding up new feature development.
+            </p>
         </div>
 
         <div id="img-5" className=' Zw-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
@@ -161,25 +143,31 @@ return (
                     <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-final-img.jpg" /> 
                 </div>
 
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>With over 500 active brands using our app, 
-                the design team had started creating different page layouts while engineering continued relying on the patterns
-                 defined early in the company. To bridge this gap, I audited the entire product, mapped all existing layouts, 
-                 and consolidated them into a set of core layouts. These were then documented as design standards, giving the 
-                 whole team a clear starting point when building new features.</p>
-            </AnimatedContent>
+         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-12 sm:pr-12 sm:pb-[176px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Components Built for Scale</h2>
+            <p className='text-[24px] leading-[150%] sm:w-2/3'>In the creator ecosystem, video and images play a central role. To support this, I created and documented the media card component for the new social listing feature.
+                <br></br><br></br>
+                The component later scaled across multiple other features, proving the value of building with flexibility and reusability in mind.
+            </p>
+        </div>
+
+        <div id="img-5" className=' Zw-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-final-img.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/superfiliate-final-img.jpg" /> 
+                </div>
+
+         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-12 sm:pr-12 sm:pb-[176px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>The Impact</h2>
+            <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            Established Superfiliate’s first scalable design system, enabling the team to design with speed and consistency.
+            <br></br><br></br>
+            Created a dark mode-ready framework, ensuring theming could be implemented without friction.
+            <br></br><br></br>
+            Consolidated 500+ brand experiences into a unified layout system, aligning design and engineering.
+            <br></br><br></br>
+
+            Built reusable components that powered new features and scaled across the product.
+            </p>
         </div>
 
         <div className='flex flex-row justify-center gap-16 pt-[160px] pb-[80px] sm:pt-[250px] sm:pb-[100px] items-baseline' data-cursor="scroll">
