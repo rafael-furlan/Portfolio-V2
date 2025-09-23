@@ -28,7 +28,7 @@ return (
 
         <TopBar/>
 
-        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-12 sm:pr-12 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
+        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-20 sm:pr-20 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
             <h6 className='text-[20px]'>Pleez App</h6>
             <h2 className='text-[36px] sm:text-[56px] sm:w-4/5'>Designed the Startup’s First MVP</h2>
         </div>
@@ -50,26 +50,20 @@ return (
                 </div>
             </AnimatedContent>
 
-        
+            <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
+                
+                <h2 className='text-[36px]'>The Challenge</h2>
+                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                Restaurants were struggling with scaling their service while maintaining speed and accuracy. Simple requests like ordering drinks or small items still required staff involvement, creating bottlenecks during busy hours.
+                <br></br><br></br>
+                For customers, this meant delays and friction in their dining experience. For operators, it meant reduced efficiency and limited ability to scale without hiring more staff.
+                <br></br><br></br>
+                The challenge was clear: how do we create a system that allows customers to order independently while giving restaurants full visibility and control?
+                </p>
 
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>At Pleez app, the main goal was to simplify the ordering experience,
-                 removing the dependence on human attendants for simple requests, 
-                 so customers could place their orders quickly and restaurants could scale more efficiently.</p>
-            </AnimatedContent>
-        </div>
+            </div>
+
+        
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
@@ -78,50 +72,34 @@ return (
                 
         </div>
 
-        <div className='w-full flex flex-row-reverse pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent className="w-2/3"
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-                
+         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Designing the Flow</h2>
+                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                We designed a seamless ordering journey that put customers in control:<br></br><br></br>
+                • Browse the restaurant’s menu<br></br>
+                • Select products<br></br>
+                • Place orders and complete payments<br></br><br></br>
+                All without needing to depend on staff. This reduced waiting times and gave customers a sense of autonomy inside the restaurant.The challenge was clear: how do we create a system that allows customers to order independently while giving restaurants full visibility and control?
+                </p>
 
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] '>We designed a seamless flow that gave customers full control of 
-                their purchase journey inside the restaurant — from browsing the menu and selecting products to completing the 
-                payment, without depending on staff.</p>
-            </AnimatedContent>
-        </div>
+         </div>
 
         <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/pleez-img-3.jpg" /> 
                 <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/pleez-img-3.jpg" /> 
         </div>
         
-        <div className='w-full flex flex-row pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] sm:w-2/3'>Operators gained clear visibility into every stage of 
-                the process, making it easier to track, prioritize, and complete requests in real time. This improved speed and accuracy,
-                 allowing restaurants to provide efficient service while scaling operations.</p>
-            </AnimatedContent>
-        </div>
+        <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Empowering Operators</h2>
+                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                On the operator side, we built a real-time view into every stage of the order journey. Staff could:<br></br><br></br>
+                • Track incoming requests<br></br>
+                • Prioritize them efficiently<br></br>
+                • Complete them with higher speed and accuracy<br></br><br></br>
+                This visibility turned the ordering process into a scalable workflow, allowing restaurants to handle more customers without extra overhead.
+                </p>
+
+         </div>
 
         <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
@@ -130,26 +108,37 @@ return (
                 
         </div>
 
-        <div className='w-full flex flex-row-reverse pt-[80px] pl-6 pr-6 pb-[80px] sm:h-screen sm:pt-[250px] sm:pl-12 sm:pr-12 sm:pb-[250px] cursor-none items-center' data-cursor="scroll">
-            <AnimatedContent className="w-2/3"
-                distance={50}
-                direction="vertical"
-                reverse={false}
-                duration={0.8}
-                ease="power2.out"
-                initialOpacity={0.0}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-                delay={0.8}
-                
+        <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
+            <h2 className='text-[36px]'>Customization as a Core Feature</h2>
+                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                Branding was central for our target restaurants. To address this, we designed the MVP to be fully customizable. Both the app and platform could adapt to each restaurant’s identity — from colors and logos to the overall look and feel.<br></br><br></br>
+                This not only boosted adoption but also made the experience feel authentic to each brand, a critical factor in the hospitality industry.
+                </p>
 
-            >
-                <p className='text-[24px] leading-[150%] sm:text-[36px] '>Branding was a core value for our target restaurants, 
-                    so customization was built in from the start. Both the app and platform adapted to each restaurant's 
-                    identity, making the experience feel unique and boosting adoption.</p>
-            </AnimatedContent>
-        </div>
+         </div>
+
+         <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/pleez-img-1.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/pleez-img-1.jpg" /> 
+                </div>
+            
+
+            <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
+                
+                <h2 className='text-[36px]'>The Impact</h2>
+                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                Built and launched Pleez’s first MVP, enabling real-world validation of the core value proposition.
+                <br></br><br></br>
+                Delivered a frictionless customer experience, reducing wait times and dependency on staff.
+                <br></br><br></br>
+                Empowered operators with real-time visibility and prioritization, improving efficiency and accuracy.
+                <br></br><br></br>
+
+                Created a customizable system, strengthening brand adoption and differentiation in the market.The challenge was clear: how do we create a system that allows customers to order independently while giving restaurants full visibility and control?
+                </p>
+
+            </div>
+
 
         <div className='flex flex-row justify-center gap-16 pt-[160px] pb-[80px] sm:pt-[250px] sm:pb-[100px] items-baseline' data-cursor="scroll">
             <Marquee autoFill={true}>

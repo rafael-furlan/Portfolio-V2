@@ -28,6 +28,8 @@ export default function CustomCursor() {
         setText('View');
       } else if (el.closest('[data-cursor="top"]')) {
         setText('Top');
+      } else if (el.closest('[data-cursor="soon"]')) {
+        setText('Soon');
       } else {
         setText('');
       }
