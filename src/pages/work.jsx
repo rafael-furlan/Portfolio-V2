@@ -76,11 +76,11 @@ function WorkPage() {
           </Link>
 
           <Link  className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/viplan-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
+            <div className='bg-[url(/images/project-placeholders/Viplan/viplan-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
           </Link>
           
           <Link className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/shipify-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
+            <div className='bg-[url(/images/project-placeholders/Viplan/thumb-shipify.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
           </Link>
 
           
