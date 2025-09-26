@@ -28,9 +28,9 @@ return (
 
         <TopBar/>
 
-        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-20 sm:pr-20 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
-            <h6 className='text-[20px]'>Pleez App</h6>
-            <h2 className='text-[36px] sm:text-[56px] sm:w-4/5'>Designed the Startup’s First MVP</h2>
+        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-56 sm:pl-20 sm:pr-20 sm:pb-14 sm:gap-4 cursor-none' data-cursor="scroll">
+            <h6 className='text-gray-500 text-[20px]'>Pleez App</h6>
+            <h2 className='text-gray-800 text-gray-800 text-[36px] sm:text-[56px] sm:w-4/5'>Designed the Startup’s First MVP</h2>
         </div>
         <AnimatedContent
                 distance={20}
@@ -52,8 +52,8 @@ return (
 
             <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
                 
-                <h2 className='text-[36px]'>The Challenge</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                <h2 className='text-gray-800 text-gray-800 text-[36px]'>The Challenge</h2>
+                <p className=' text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 Restaurants were struggling with scaling their service while maintaining speed and accuracy. Simple requests like ordering drinks or small items still required staff involvement, creating bottlenecks during busy hours.
                 <br></br><br></br>
                 For customers, this meant delays and friction in their dining experience. For operators, it meant reduced efficiency and limited ability to scale without hiring more staff.
@@ -73,8 +73,8 @@ return (
         </div>
 
          <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Designing the Flow</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>Designing the Flow</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 We designed a seamless ordering journey that put customers in control:<br></br><br></br>
                 • Browse the restaurant’s menu<br></br>
                 • Select products<br></br>
@@ -90,8 +90,8 @@ return (
         </div>
         
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Empowering Operators</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>Empowering Operators</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 On the operator side, we built a real-time view into every stage of the order journey. Staff could:<br></br><br></br>
                 • Track incoming requests<br></br>
                 • Prioritize them efficiently<br></br>
@@ -109,8 +109,8 @@ return (
         </div>
 
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Customization as a Core Feature</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>Customization as a Core Feature</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 Branding was central for our target restaurants. To address this, we designed the MVP to be fully customizable. Both the app and platform could adapt to each restaurant’s identity — from colors and logos to the overall look and feel.<br></br><br></br>
                 This not only boosted adoption but also made the experience feel authentic to each brand, a critical factor in the hospitality industry.
                 </p>
@@ -125,8 +125,8 @@ return (
 
             <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
                 
-                <h2 className='text-[36px]'>The Impact</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                <h2 className='text-gray-800 text-[36px]'>The Impact</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 Built and launched Pleez’s first MVP, enabling real-world validation of the core value proposition.
                 <br></br><br></br>
                 Delivered a frictionless customer experience, reducing wait times and dependency on staff.

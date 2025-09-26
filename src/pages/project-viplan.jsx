@@ -4,6 +4,7 @@ import CustomCursor from '../components/customcursor.jsx';
 import { Link } from 'react-router-dom';
 import AnimatedContent from '../components/animatedcontent.jsx'
 import Marquee from "react-fast-marquee";
+import Lottie from 'lottie-react';
 
 function ProjectViplan() {
 
@@ -12,10 +13,31 @@ function ProjectViplan() {
       }, []);
 
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [lottieData1, setLottieData1] = useState(null);
+    const [lottieData2, setLottieData2] = useState(null);
+    const [lottieData3, setLottieData3] = useState(null);
 
   useEffect(() => {
-    // Detecta se é dispositivo touch
+    
     setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    
+    
+    // Carregar múltiplas animações Lottie
+    const loadLottieAnimations = async () => {
+      try {
+        // Animação 1
+        const response1 = await fetch('/images/project-placeholders/Viplan/client-facing.json');
+        const data1 = await response1.json();
+        setLottieData1(data1);
+
+        
+
+      } catch (error) {
+        console.error('Error loading Lottie animations:', error);
+      }
+    };
+
+    loadLottieAnimations();
     
     }, []);
 
@@ -28,9 +50,9 @@ return (
 
         <TopBar/>
 
-        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-20 sm:pr-20 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
-            <h6 className='text-[20px]'>Viplan Construction company</h6>
-            <h2 className='text-[36px] sm:text-[56px] '>Transforming a spreadsheet workflow<br></br>
+        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-56 sm:pl-20 sm:pr-20 sm:pb-14 sm:gap-4 cursor-none' data-cursor="scroll">
+            <h6 className='text-gray-500 text-[20px]'>Viplan Construction company</h6>
+            <h2 className='text-gray-800 text-[36px] sm:text-[56px] '>Transforming a spreadsheet workflow<br></br>
             into a scalable platform</h2>
         </div>
         <AnimatedContent
@@ -53,8 +75,8 @@ return (
 
             <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
                 
-                <h2 className='text-[36px]'>The Challenge</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                <h2 className='text-gray-800 text-[36px]'>The Challenge</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 At a Viplan constructions, apartment buyers reached a stage where they needed to select finishing products — such as flooring, wall colors, and bathroom or kitchen configurations.
                 <br></br><br></br>
                 This process was managed entirely through spreadsheets and email exchanges between the company and its clients. The workflow quickly became problematic:
@@ -75,13 +97,26 @@ return (
         
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-        <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
+                {lottieData1 ? (
+                            <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
+                                <Lottie 
+                                                    animationData={lottieData1}
+                                                    loop={true}
+                                                    autoplay={true}
+                                                    className='w-full h-full'
+                                                />
+                                            </div>
+                                        ) : (
+                                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
+                                        <p className='text-gray-500'>Loading animation...</p>
+                                    </div>
+                                )}
+                
         </div>
 
          <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>The solution for the end customers</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>The solution for the end customers</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 I designed a portal that brought the entire customization process into a single, intuitive space. They could log in, see their available apartments, browse through each environment, and preview how different finishes would look in context. 
                 <br></br><br></br>
                 Every choice was tied to real-time cost feedback, giving clients full transparency over their budget. Once their selections were complete, they could finalize and submit everything directly through the platform, removing the need for endless email exchanges.
@@ -95,8 +130,8 @@ return (
         </div>
         
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>The solution for the Company</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>The solution for the Company</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 On the company side, the platform acted as a centralized hub to manage the entire operation. Teams could upload and organize finishing products, configure the structures of each apartment, and receive completed submissions from clients in one place. This structure streamlined internal workflows, removed the reliance on spreadsheets, and created a more scalable process that ensured deadlines were met while maintaining alignment with client expectations.
                 </p>
 
@@ -111,8 +146,8 @@ return (
 
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
                 
-                <h2 className='text-[36px]'>The Impact</h2>
-                <p className='text-[24px] leading-[150%] sm:w-2/3'>
+                <h2 className='text-gray-800 text-[36px]'>The Impact</h2>
+                <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
                 When launched with the company’s new apartment line, the platform immediately validated its value:
                 <br></br><br></br>
                 The internal workflow for managing apartments and budgets became faster, clearer, and far more scalable;

@@ -60,9 +60,9 @@ return (
 
         <TopBar/>
 
-        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-44 sm:pl-20 sm:pr-20 sm:pb-20 sm:gap-6 cursor-none' data-cursor="scroll">
-            <h6 className='text-[20px]'>Superfiliate Design System</h6>
-            <h2 className='text-[36px] sm:text-[56px]'>Building the Superfiliate Design System</h2>
+        <div id="project-heading" className='w-full flex flex-col cursor-none bg-gray-50 pt-44 pb-20 pl-6 pr-6 gap-[40px] sm:pt-56 sm:pl-20 sm:pr-20 sm:pb-14 sm:gap-4 cursor-none' data-cursor="scroll">
+            <h6 className='text-gray-500 text-[20px]'>Superfiliate Design System</h6>
+            <h2 className='text-gray-800 text-[36px] sm:text-[56px]'>Building the Superfiliate Design System</h2>
         </div>
         <AnimatedContent
                 distance={20}
@@ -85,8 +85,8 @@ return (
         
 
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>The Challenge</h2>
-            <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>The Challenge</h2>
+            <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
             When I joined Superfiliate, the company had no design system in place. Early styles existed, but there was no scalable framework to ensure consistency as the product grew.<br></br><br></br>
             With over 500 active brands using the app, designers were creating different page layouts while engineers continued relying on outdated patterns from the company’s early days. This created friction, inconsistencies, and a lack of clarity across the product experience.
             </p>
@@ -101,8 +101,8 @@ return (
         </div>
 
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Defining the Foundation</h2>
-            <p className='text-[24px] leading-[150%] sm:w-2/3'>I set out to build the design system from the ground up, starting with a token-based foundation.<br></br><br></br>
+            <h2 className='text-gray-800 text-[36px]'>Defining the Foundation</h2>
+            <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>I set out to build the design system from the ground up, starting with a token-based foundation.<br></br><br></br>
                 • Introduced a global token system covering color and spacing.<br></br>
                 • Added a semantic layer with surface, typography, border, and icon tokens.<br></br>
                 • Split spacing into gap and padding tokens for clarity and reusability.<br></br><br></br>
@@ -129,8 +129,8 @@ return (
         </div>
         
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Designing for Dark Mode</h2>
-            <p className='text-[24px] leading-[150%] sm:w-2/3'>With theming becoming a product priority, I leveraged Figma’s variable system to make dark mode implementation almost automatic.<br></br><br></br>
+            <h2 className='text-gray-800 text-[36px]'>Designing for Dark Mode</h2>
+            <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>With theming becoming a product priority, I leveraged Figma’s variable system to make dark mode implementation almost automatic.<br></br><br></br>
 
                 Working closely with engineering, I introduced dedicated tokens for overlay components, a previously overlooked area that required extra attention for accessibility and usability.
             </p>
@@ -155,8 +155,8 @@ return (
         </div>
 
         <div className='hidden w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Scaling Layouts Across the Platform</h2>
-            <p className='text-[24px] leading-[150%] sm:w-2/3'>To address the growing divide between design and engineering, I audited the entire product and mapped all existing layouts. From this, I consolidated them into a set of core layouts that were then documented as standards.
+            <h2 className='text-gray-800 text-[36px]'>Scaling Layouts Across the Platform</h2>
+            <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>To address the growing divide between design and engineering, I audited the entire product and mapped all existing layouts. From this, I consolidated them into a set of core layouts that were then documented as standards.
                 <br></br><br></br>
                 This gave both teams a clear single source of truth, reducing inconsistencies and speeding up new feature development.
             </p>
@@ -179,8 +179,8 @@ return (
                 )}                </div>
 
          <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>Components Built for Scale</h2>
-            <p className='text-[24px] leading-[150%] sm:w-2/3'>In the creator ecosystem, video and images play a central role. To support this, I created and documented the media card component for the new social listing feature.
+            <h2 className='text-gray-800 text-[36px]'>Components Built for Scale</h2>
+            <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>In the creator ecosystem, video and images play a central role. To support this, I created and documented the media card component for the new social listing feature.
                 <br></br><br></br>
                 The component later scaled across multiple other features, proving the value of building with flexibility and reusability in mind.
             </p>
@@ -205,8 +205,8 @@ return (
                 </div>
 
             <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
-            <h2 className='text-[36px]'>The Impact</h2>
-            <p className='text-[24px] leading-[150%] sm:w-2/3'>
+            <h2 className='text-gray-800 text-[36px]'>The Impact</h2>
+            <p className='text-gray-700 text-[22px] leading-[150%] sm:w-2/3'>
             Established Superfiliate’s first scalable design system, enabling the team to design with speed and consistency.
             <br></br><br></br>
             Created a dark mode-ready framework, ensuring theming could be implemented without friction.
