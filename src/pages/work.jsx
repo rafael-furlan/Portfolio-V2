@@ -50,7 +50,7 @@ function WorkPage() {
             <Marquee autoFill={true}>
               <div className='flex flex-row justify-center ml-8 mr-8'>
                 <h1 className='text-gray-800 font-sora text-[102px] sm:text-[102px] font-medium tracking-tighter'>
-                  Staff Product Designer
+                  Senior Product Designer
                 </h1>
               </div>
               <div className='flex flex-row justify-center ml-8 mr-8'>
