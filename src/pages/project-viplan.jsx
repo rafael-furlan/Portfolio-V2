@@ -68,8 +68,8 @@ return (
                 delay={0.3}
             >
                 <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="public/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
+                    <img className="hidden sm:block  object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
                 </div>
             </AnimatedContent>
 
@@ -97,21 +97,8 @@ return (
         
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                {lottieData1 ? (
-                            <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
-                                <Lottie 
-                                                    animationData={lottieData1}
-                                                    loop={true}
-                                                    autoplay={true}
-                                                    className='w-full h-full'
-                                                />
-                                            </div>
-                                        ) : (
-                                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
-                                        <p className='text-gray-500'>Loading animation...</p>
-                                    </div>
-                                )}
-                
+            <img className="hidden sm:block object-cover rounded-xl" src="/images/final%20imgs/viplan/customer-face.png" /> 
+            <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/final%20imgs/viplan/customer-face.png" />      
         </div>
 
          <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
@@ -125,8 +112,8 @@ return (
          </div>
 
         <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
-                <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpgg" /> 
+                <img className="hidden sm:block  object-cover rounded-xl" src="/images/final%20imgs/viplan/company-face.png" /> 
+                <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/final%20imgs/viplan/company-face.png" /> 
         </div>
         
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
@@ -139,8 +126,8 @@ return (
 
 
          <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" /> 
+                    <img className="hidden sm:block object-cover rounded-xl" src="/images/final imgs/viplan/finale.png" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/final imgs/viplan/finale.png" /> 
                 </div>
             
 

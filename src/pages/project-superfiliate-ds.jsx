@@ -27,7 +27,7 @@ function ProjectSuperfiliate() {
     const loadLottieAnimations = async () => {
       try {
         // Animação 1
-        const response1 = await fetch('/images/project-placeholders/superfiliate/sf-ds-bw-img.json');
+        const response1 = await fetch('/images/final imgs/Superfiliate DS/light-to-dark-new.json');
         const data1 = await response1.json();
         setLottieData1(data1);
 
@@ -77,8 +77,8 @@ return (
                 delay={0.3}
             >
                 <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/superfiliate/sf-ds-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/superfiliate/sf-ds-img-1.jpg" /> 
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/final imgs/Superfiliate DS/first-cover.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/final imgs/Superfiliate DS/first-cover.jpg" /> 
                 </div>
             </AnimatedContent>
 
@@ -93,8 +93,9 @@ return (
         </div>
 
 
-        <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
+        <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 gap-[20px]sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
+                <img className=" sm:block object-cover rounded-xl" src="/images/final imgs/Superfiliate DS/tokens.png" /> 
+                <video autoPlay loop muted className=' hidden w-full sm:aspect-video object-cover rounded-xl'>
                     <source src="/images/project-placeholders/superfiliate-img-2.2.mp4" type="video/mp4" />
                 </video>
                 
@@ -112,7 +113,7 @@ return (
 
         <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                 {lottieData1 ? (
-                            <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
+                            <div className='w-full'>
                                 <Lottie 
                                     animationData={lottieData1}
                                     loop={true}
@@ -137,20 +138,7 @@ return (
         </div>
 
         <div id="img-4" className=' hidden w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                {lottieData2 ? (
-                    <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
-                        <Lottie 
-                            animationData={lottieData2}
-                            loop={true}
-                            autoplay={true}
-                            className='w-full h-full'
-                        />
-                    </div>
-                ) : (
-                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
-                        <p className='text-gray-500'>Loading animation 2...</p>
-                    </div>
-                )}
+        <img className="sm:block object-cover rounded-xl" src="/images/final imgs/Superfiliate DS/media-card-img.png" />
                 
         </div>
 
@@ -163,20 +151,7 @@ return (
         </div>
 
         <div id="img-5" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-        {lottieData3 ? (
-                            <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
-                                <Lottie 
-                                    animationData={lottieData3}
-                                    loop={true}
-                                    autoplay={true}
-                                    className='w-full h-full'
-                                />
-                            </div>
-                        ) : (
-                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
-                        <p className='text-gray-500'>Loading animation...</p>
-                    </div>
-                )}                </div>
+        <img className="sm:block object-cover rounded-xl" src="/images/final imgs/Superfiliate DS/media-card-img.png" />         </div>
 
          <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
             <h2 className='text-gray-800 text-[36px]'>Components Built for Scale</h2>
@@ -187,20 +162,7 @@ return (
         </div>
 
         <div id="img-6" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                {lottieData2 ? (
-                     <div className='w-full sm:aspect-video rounded-xl overflow-hidden'>
-                         <Lottie 
-                                            animationData={lottieData2}
-                                            loop={true}
-                                            autoplay={true}
-                                            className='w-full h-full'
-                                        />
-                                    </div>
-                                ) : (
-                            <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
-                                <p className='text-gray-500'>Loading animation...</p>
-                            </div>
-                        )}
+        <img className="sm:block object-cover rounded-xl" src="/images/final imgs/Superfiliate DS/the-impact.png" />
                 
                 </div>
 

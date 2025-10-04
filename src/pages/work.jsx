@@ -67,20 +67,21 @@ function WorkPage() {
           className='grid grid-cols-1 pt-8 pl-6 pr-6 gap-4 sm:pt-0 sm:grid-cols-2 sm:pr-12 sm:pl-12 sm:gap-4'
           
         >
-          <Link to="/project-pleez" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/pleez-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="view"></div>
+          
+          <Link  to="/project-viplan" className='cursor-none'>
+            <div className='bg-[url(/images/project-placeholders/Viplan/viplan-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="view"></div>        
           </Link>
 
           <Link to="/project-superfiliate-ds" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/superfiliate/sf-ds-cover.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="view"></div>        
+            <div className='bg-[url(/images/final%20imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="view"></div>        
           </Link>
 
-          <Link  to="/project-viplan" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/Viplan/viplan-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
+          <Link to="/project-pleez" className='cursor-none'>
+            <div className='bg-[url(/images/final%20imgs/pleez/pleez-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="view"></div>
           </Link>
-          
+
           <Link className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/Viplan/thumb-shipify-2.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
+            <div className='bg-[url(/images/final%20imgs/Sf-tiktokshop/sf-tiktok-shop-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center rounded-lg' data-cursor="soon"></div>        
           </Link>
 
           
