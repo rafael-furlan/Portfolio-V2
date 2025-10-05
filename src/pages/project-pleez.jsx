@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import TopBar from '../components/topbar.jsx';
 import CustomCursor from '../components/customcursor.jsx';
-import { Link } from 'react-router-dom';
-import AnimatedContent from '../components/animatedcontent.jsx'
+import AnimatedContent from '../components/animatedcontent.jsx';
 import Marquee from "react-fast-marquee";
+import { Link } from 'react-router-dom';
+import Lottie from 'lottie-react';
 
 function ProjectPleez() {
 
@@ -12,10 +13,34 @@ function ProjectPleez() {
       }, []);
 
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [lottieData1, setLottieData1] = useState(null);
+    const [lottieData2, setLottieData2] = useState(null);
+    const [lottieData3, setLottieData3] = useState(null);
 
-  useEffect(() => {
-    // Detecta se é dispositivo touch
+    useEffect(() => {
+    
     setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    
+    
+    // Carregar múltiplas animações Lottie
+    const loadLottieAnimations = async () => {
+      try {
+        // Animação 1
+        const response1 = await fetch('/images/final%20imgs/pleez/customer-ui.json');
+        const data1 = await response1.json();
+        setLottieData1(data1);
+
+        const response2 = await fetch('/images/finalimgs/pleez/customization.json');
+        const data2 = await response2.json();
+        setLottieData2(data2);
+
+
+      } catch (error) {
+        console.error('Error loading Lottie animations:', error);
+      }
+    };
+
+    loadLottieAnimations();
     
     }, []);
 
@@ -45,8 +70,8 @@ return (
                 delay={0.3}
             >
                 <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/pleez-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/pleez-img-1.jpg" /> 
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/final imgs/pleez/pleez-cover.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/final imgs/pleez/pleez-cover.jpg" /> 
                 </div>
             </AnimatedContent>
 
@@ -66,9 +91,22 @@ return (
         
 
         <div id="img-2" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/pleez-app-interaction.mp4" type="video/mp4" />
-                </video>
+                
+                {lottieData1 ? (
+                            <div className='w-full'>
+                                <Lottie 
+                                    animationData={lottieData1}
+                                    loop={true}
+                                    autoplay={true}
+                                    className='w-full h-full'
+                                />
+                            </div>
+                        ) : (
+                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
+                        <p className='text-gray-500'>Loading animation...</p>
+                    </div>
+                )}
+                
                 
         </div>
 
@@ -85,8 +123,8 @@ return (
          </div>
 
         <div id="img-3" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/pleez-img-3.jpg" /> 
-                <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/pleez-img-3.jpg" /> 
+                <img className="hidden sm:block object-cover rounded-xl" src="/images/final imgs/pleez/operators-ui.jpg" /> 
+                <img className="block sm:hidden object-cover rounded-xl" src="/images/final imgs/pleez/operators-ui.jpg" /> 
         </div>
         
         <div className='w-full flex flex-col pt-[80px] pl-6 pr-6 pb-[80px] sm:pt-[80px] sm:pl-20 sm:pr-20 sm:pb-[200px] gap-9 cursor-none' data-cursor="scroll">
@@ -102,9 +140,20 @@ return (
          </div>
 
         <div id="img-4" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                <video autoPlay loop muted className='w-full sm:aspect-video object-cover rounded-xl'>
-                    <source src="/images/project-placeholders/pleez-animation-fixed.mp4" type="video/mp4" />
-                </video>
+        {lottieData2 ? (
+                            <div className='w-full'>
+                                <Lottie 
+                                    animationData={lottieData2}
+                                    loop={true}
+                                    autoplay={true}
+                                    className='w-full h-full'
+                                />
+                            </div>
+                        ) : (
+                    <div className='w-full sm:aspect-video bg-gray-200 rounded-xl flex items-center justify-center'>
+                        <p className='text-gray-500'>Loading animation...</p>
+                    </div>
+                )}
                 
         </div>
 
@@ -118,8 +167,8 @@ return (
          </div>
 
          <div id="img-1" className='w-full flex flex-col pl-6 pr-6 sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
-                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/project-placeholders/pleez-img-1.jpg" /> 
-                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/project-placeholders/pleez-img-1.jpg" /> 
+                    <img className="hidden sm:block sm:aspect-video object-cover rounded-xl" src="/images/final imgs/pleez/pleez-cover.jpg" /> 
+                    <img className="block sm:hidden aspect-[4/5] object-cover rounded-xl" src="/images/final imgs/pleez/pleez-cover.jpg" /> 
                 </div>
             
 
