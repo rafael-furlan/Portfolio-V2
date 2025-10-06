@@ -30,7 +30,7 @@ function ProjectPleez() {
         const data1 = await response1.json();
         setLottieData1(data1);
 
-        const response2 = await fetch('/images/finalimgs/pleez/customization.json');
+        const response2 = await fetch('/images/final%20imgs/pleez/customization (1).json');
         const data2 = await response2.json();
         setLottieData2(data2);
 
