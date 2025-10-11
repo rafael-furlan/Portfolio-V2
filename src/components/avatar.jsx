@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 function Avatar() {
   return (
-    <div className='p-[4px] rounded-full bg-gray-600/20 backdrop-blur-md hover:bg-gray-600/40 
+    <div className='p-[2px] rounded-full bg-gray-600/20 backdrop-blur-md hover:bg-gray-600/40 
     transition-all duration-300 border border-gray-50/20' data-cursor="hidden">
 
     <Link to="/" className='cursor-none'>
-      <div className="min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] sm:min-w-[60px] sm:min-h-[60px] sm:max-w-[60px] 
+      <div className="min-w-[54px] min-h-[54px] max-w-[54px] max-h-[54px] sm:min-w-[54px] sm:min-h-[54px] sm:max-w-[54px] 
       sm:max-h-[60px] bg-[url('/images/portrait/fractal-portrait.jpg')] bg-cover bg-center rounded-full "></div>
     </Link>
     
     </div>
-  );
+  );  
 }
 
 export default Avatar;
