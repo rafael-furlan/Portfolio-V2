@@ -44,7 +44,7 @@ function HeaderButton2() {
       onClick={handleClick} 
       className="flex items-center justify-center min-w-[56px] 
       max-w-[56px] min-h-[56px] max-h-[56px] sm:min-w-[56px] sm:max-w-[56px] 
-      sm:min-h-[56px] sm:max-h-[56px] rounded-full bg-gray-600/10 backdrop-blur-md border border-gray-50/20
+      sm:min-h-[56px] sm:max-h-[56px] rounded-full bg-gray-600/10 backdrop-blur-md border border-gray-50/30
       hover:bg-gray-600/20 active:bg-gray-600/30 transition-all duration-300 cursor-none"
     >
       <svg

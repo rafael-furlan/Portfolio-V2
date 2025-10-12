@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Avatar() {
   return (
-    <div className='p-[2px] rounded-full bg-gray-600/20 backdrop-blur-md hover:bg-gray-600/40 
-    transition-all duration-300 border border-gray-50/20' data-cursor="hidden">
+    <div className='p-[2px] rounded-full bg-gray-600/10 backdrop-blur-md hover:bg-gray-600/20 
+    transition-all duration-300 border border-gray-50/30' data-cursor="hidden">
 
     <Link to="/" className='cursor-none'>
       <div className="min-w-[54px] min-h-[54px] max-w-[54px] max-h-[54px] sm:min-w-[54px] sm:min-h-[54px] sm:max-w-[54px] 

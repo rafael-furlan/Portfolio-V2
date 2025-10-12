@@ -11,8 +11,8 @@ export default function CustomCursor() {
 
   // SVGs padrão para cada tipo de cursor
   const defaultSvgs = {
-    scroll: '<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#040711"/></svg>',
-    view: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M21 1L1 21M21 1V21M21 1H1" stroke="#040711" stroke-width="2"/></svg>',
+    scroll: '<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#f9fafb"/></svg>',
+    view: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M21 1L1 21M21 1V21M21 1H1" stroke="#f9fafb" stroke-width="2"/></svg>',
     top: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     soon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   };
@@ -140,7 +140,7 @@ export default function CustomCursor() {
 
   const size = 80;
   const background = pressed
-    ? 'rgba(51, 65, 85, 0.4)'
+    ? 'rgba(51, 65, 85, 0.0)'
     : 'rgba(51, 65, 85, 0.0)';
 
   if (hidden || !initialized) return null;
@@ -148,7 +148,7 @@ export default function CustomCursor() {
   return (
     <div
       className="pointer-events-none fixed z-[9999] flex items-center justify-center rounded-full transition-all 
-      duration-100 ease-out w-[80px] h-[80px] tracking-widest border border-gray-900 "
+      duration-100 ease-out w-[80px] h-[80px] tracking-widest inset-0 outline outline-1 outline-gray-50 mix-blend-difference pointer-events-none"
       style={{
         background,
         transform: `translate(${position.x - size / 2}px, ${position.y - size / 2}px)`

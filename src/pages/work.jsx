@@ -29,7 +29,7 @@ function WorkPage() {
 
         <div
           id="main"
-          className='flex flex-col w-full flex-1 gap-[25px] pt-[160px] pb-0 pr-6 pl-6 sm:pt-52 sm:pl-16 sm:pr-16 sm:pb-[112px] cursor-none'
+          className='flex flex-col w-full flex-1 gap-[25px] pt-[160px] pb-0 pr-6 pl-6 sm:pt-52 sm:pl-16 sm:pr-16 sm:pb-[160px] cursor-none'
           data-cursor="scroll"
         >
           <div className='flex flex-col w-full sm:max-w-1/2 gap-4'>
@@ -51,19 +51,19 @@ function WorkPage() {
         >
           
           <Link  to="/project-viplan" className='cursor-none'>
-            <div className='bg-[url(/images/project-placeholders/Viplan/viplan-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
+            <div className='bg-[url(/images/final-imgs/viplan/viplan-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
           </Link>
 
           <Link to="/project-superfiliate-ds" className='cursor-none'>
-            <div className='bg-[url(/images/final%20imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
+            <div className='bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
           </Link>
 
           <Link to="/project-pleez" className='cursor-none'>
-            <div className='bg-[url(/images/final%20imgs/pleez/pleez-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>
+            <div className='bg-[url(/images/final-imgs/pleez/pleez-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>
           </Link>
 
           <Link className='cursor-none'>
-            <div className='bg-[url(/images/final%20imgs/Sf-tiktokshop/sf-tiktok-shop-thumb.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="soon"></div>        
+            <div className='bg-[url(/images/final-imgs/Sf-tiktokshop/tts-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="soon"></div>        
           </Link>
 
           

@@ -2,6 +2,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import WorkPage from './pages/work.jsx'
+import ChipsPage from './pages/chips.jsx'
 import ProjectPleez from './pages/project-pleez.jsx'
 import ProjectSuperfiliate from './pages/project-superfiliate-ds.jsx'
 import ProjectViplan from './pages/project-viplan.jsx'
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<WorkPage />} />
+      <Route path="/Chips" element={<ChipsPage />} />
       <Route path="/project-pleez" element={<ProjectPleez />} />
       <Route path="/project-superfiliate-ds" element={<ProjectSuperfiliate />} />
       <Route path="/project-viplan" element={<ProjectViplan />} />
