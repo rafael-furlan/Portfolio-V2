@@ -49,13 +49,12 @@ function WorkPage() {
           className='grid grid-cols-1 pt-8 pl-6 pr-6 gap-4 sm:pt-0 sm:grid-cols-2 sm:pr-12 sm:pl-12 sm:gap-4'
           
         >
+          <Link to="/project-superfiliate-ds" className='cursor-none'>
+            <div className='bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
+          </Link>
           
           <Link  to="/project-viplan" className='cursor-none'>
             <div className='bg-[url(/images/final-imgs/viplan/viplan-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
-          </Link>
-
-          <Link to="/project-superfiliate-ds" className='cursor-none'>
-            <div className='bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
           </Link>
 
           <Link to="/project-pleez" className='cursor-none'>
