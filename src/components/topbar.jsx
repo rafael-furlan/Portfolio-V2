@@ -13,7 +13,7 @@ function TopBar() {
 
         <Avatar /> 
 
-        <nav className='flex flex-row gap-[8px] items-center justify-start cursor-none' data-cursor="hidden">
+        <nav className='hidden flex flex-row gap-[8px] items-center justify-start cursor-none' data-cursor="hidden">
           <NavButton><Link  to="/" className='text-gray-900  text-[18px]'>Work</Link></NavButton>
           
           <NavButton><Link  to="/Chips" className='text-gray-900 text-[18px]'>Chips</Link></NavButton>
