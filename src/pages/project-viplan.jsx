@@ -122,7 +122,7 @@ function ProjectViplan() {
                     )}
                     </div>
                     <div className='aspect-video'> 
-                        <img className="aspect-video block object-cover" src="/images/final-imgs/viplan/customer-1.jpg" alt="Viplan project thumbnail" />
+                        <img className="aspect-video block object-cover hidden" src="/images/final-imgs/viplan/customer-1.jpg" alt="Viplan project thumbnail" />
                     </div>
 
                     <div className='aspect-video'> 
