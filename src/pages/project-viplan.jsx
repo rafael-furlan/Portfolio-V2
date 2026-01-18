@@ -4,6 +4,7 @@ import CustomCursor from '../components/customcursor.jsx';
 import { Link } from 'react-router-dom';
 import AnimatedContent from '../components/animatedcontent.jsx';
 import Marquee from "react-fast-marquee";
+import Lottie from 'lottie-react';
 import Footer from '../components/footer.jsx';
 
 function ProjectViplan() {
@@ -12,9 +13,23 @@ function ProjectViplan() {
     }, []);
 
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [lottieData1, setLottieData1] = useState(null);
 
     useEffect(() => {
         setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+        
+        // Load Lottie animation
+        const loadLottieAnimation = async () => {
+            try {
+                const response = await fetch('/images/final-imgs/viplan/image-1-background.json');
+                const data = await response.json();
+                setLottieData1(data);
+            } catch (error) {
+                console.error('Error loading Lottie animation:', error);
+            }
+        };
+
+        loadLottieAnimation();
     }, []);
 
     return (
@@ -85,9 +100,27 @@ function ProjectViplan() {
                     </p>
                 </div>
 
+                
+
                 {/* Serie de imagens 1 */}
                 <div className='w-full flex flex-col pl-6 pr-6 gap-[24px] sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
                     {/* Single image */}
+                    <div id="img-2" className='w-full flex flex-col justify-center items-center cursor-none' data-cursor="scroll">
+                    {lottieData1 ? (
+                        <div className='w-full'>
+                            <Lottie 
+                                animationData={lottieData1}
+                                loop={true}
+                                autoplay={true}
+                                className='w-full h-full'
+                            />
+                        </div>
+                    ) : (
+                        <div className='w-full sm:aspect-video bg-gray-200 flex items-center justify-center'>
+                            <p className='text-gray-500'>Loading animation...</p>
+                        </div>
+                    )}
+                    </div>
                     <div className='aspect-video'> 
                         <img className="aspect-video block object-cover" src="/images/final-imgs/viplan/customer-1.jpg" alt="Viplan project thumbnail" />
                     </div>
