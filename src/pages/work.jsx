@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import AnimatedContent from '../components/animatedcontent.jsx';
 import Marquee from "react-fast-marquee";
 import Footer from '../components/footer.jsx';
+import ThumbSquare from '../components/thumbSquare.jsx';
+import ThumbRet from '../components/thumbRet.jsx';
+
 
 function WorkPage() {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -46,27 +49,41 @@ function WorkPage() {
 
         <div
           id="grid"
-          className='grid grid-cols-1 pt-8 pl-6 pr-6 gap-4 sm:pt-0 sm:grid-cols-2 sm:pr-12 sm:pl-12 sm:gap-4'
+          className='grid grid-cols-1 pt-8 pl-6 pr-6 gap-8 sm:pt-0 sm:grid-cols-2 sm:pr-12 sm:pl-12 sm:gap-12'
           
         >
-          <Link to="/project-superfiliate-ds" className='cursor-none'>
-            <div className='bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
-          </Link>
-          
-          <Link  to="/project-viplan" className='cursor-none'>
-            <div className='bg-[url(/images/final-imgs/viplan/viplan-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>        
-          </Link>
+          <ThumbSquare
+            title="Design System Zero → 1"
+            subtitle="Creators Econ | Design System | Tokens Library"
+          >
+            <Link to="/project-superfiliate-ds" className='bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
+            </Link>
+          </ThumbSquare>
 
-          <Link to="/project-pleez" className='cursor-none'>
-            <div className='bg-[url(/images/final-imgs/pleez/pleez-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="view"></div>
-          </Link>
+          <ThumbRet 
+            title="From spreadsheets to Scalable workflows "
+            subtitle="Real Estate Developer | Web | Mobile"
+          >
+            <Link to="/project-viplan" className='bg-[url(/images/final-imgs/viplan/viplan-thumb-main.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
+            </Link>      
+          </ThumbRet>
 
-          <Link className='cursor-none'>
-            <div className='bg-[url(/images/final-imgs/Sf-tiktokshop/tts-thumb-main.jpg)] bg-cover w-full aspect-square flex items-center justify-center' data-cursor="soon"></div>        
-          </Link>
+          <ThumbRet 
+            title="Design System Zero → 1"
+            subtitle="Creators Econ | Design System | Tokens Library"
+          >
+            <div className='bg-[url(/images/final-imgs/Sf-tiktokshop/thumb-sf-placeholder.jpg)] bg-cover bg-center w-full h-full place-content-center' data-cursor="view">
+            </div>        
+          </ThumbRet>
 
-          
-          
+          <ThumbSquare
+            title="Self-ordering and management system"
+            subtitle="FoodTech | Mobile | Management platform"
+          >
+            <Link to="/project-pleez" className='bg-[url(/images/final-imgs/pleez/pleez-thumb-main.jpg)] bg-cover  bg-center w-full h-full cursor-none' data-cursor="view">
+            </Link>
+          </ThumbSquare>
+
         </div>
 
         <Footer />
