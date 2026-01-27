@@ -69,8 +69,8 @@ function WorkPage() {
           </ThumbRet>
 
           <ThumbRet 
-            title="Design System Zero → 1"
-            subtitle="Creators Econ | Design System | Tokens Library"
+            title="Find better creators faster"
+            subtitle="Creators Econ | Web | AI"
           >
             <div className='bg-[url(/images/final-imgs/Sf-tiktokshop/thumb-sf-placeholder.jpg)] bg-cover bg-center w-full h-full place-content-center' data-cursor="view">
             </div>        
