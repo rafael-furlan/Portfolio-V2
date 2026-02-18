@@ -150,16 +150,16 @@ return (
         <div className='w-full flex flex-col pl-6 pr-6 gap-[24px] sm:pl-12 sm:pr-12 justify-center items-center cursor-none' data-cursor="scroll">
             {/* Single image */}
             <div className='aspect-video'> 
-                <img className="aspect-video block object-cover" src="/images/final-imgs/pleez/operators-1.jpg" alt="Viplan project thumbnail" />
+                <img className="aspect-video block object-cover" src="/images/final-imgs/pleez/operators-1.jpg" alt="pleez project thumbnail" />
             </div>
                     
             {/* Double image */}
             <div className='flex flex-row gap-[24px]'>
                 <div className='aspect-square max-w-1/2'> 
-                    <img className="object-cover" src="/images/final-imgs/pleez/operators-2.jpg" alt="Viplan project thumbnail" />
+                    <img className="object-cover" src="/images/final-imgs/pleez/operators-2.jpg" alt="pleez project thumbnail" />
                 </div>
                 <div className='aspect-square max-w-1/2'> 
-                    <img className="block object-cover" src="/images/final-imgs/pleez/operators-3.jpg" alt="Viplan project thumbnail" />
+                    <img className="block object-cover" src="/images/final-imgs/pleez/operators-3.jpg" alt="pleez project thumbnail" />
                 </div>
             </div>
         </div>
