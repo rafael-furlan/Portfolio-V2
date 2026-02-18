@@ -37,7 +37,7 @@ function WorkPage() {
         >
           <div className='flex flex-col w-full sm:max-w-1/2 gap-4'>
             <p className='text-gray-900 font-sora font-regular text-3xl leading-9'>
-            Senior Product Designer and Frontend Enthusiast with 7+ years of experience in Design field.
+            Staff Product Designer and Frontend Enthusiast with 7+ years of experience in Design field.
             </p>
             <p className='text-gray-500 font-sora font-regular text-3xl leading-9'>
             Working across Web and Mobile, UX projects and Design Systems has shaped my belief in Holistic Design - Where designers own the entire journey from strategy to implementation.
