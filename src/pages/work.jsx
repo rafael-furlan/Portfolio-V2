@@ -56,7 +56,7 @@ function WorkPage() {
             title="Design System Zero → 1"
             subtitle="Creators Econ | Design System | Tokens Library"
           >
-            <Link to="/project-superfiliate-ds" className='bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
+            <Link to="/project-superfiliate-ds" className='block bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
             </Link>
           </ThumbSquare>
 
@@ -64,7 +64,7 @@ function WorkPage() {
             title="From spreadsheets to Scalable workflows "
             subtitle="Real Estate Developer | Web | Mobile"
           >
-            <Link to="/project-viplan" className='bg-[url(/images/final-imgs/viplan/viplan-thumb-main.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
+            <Link to="/project-viplan" className='block bg-[url(/images/final-imgs/viplan/viplan-thumb-main.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
             </Link>      
           </ThumbRet>
 
@@ -72,7 +72,7 @@ function WorkPage() {
             title="Find better creators faster"
             subtitle="Creators Econ | Web | AI"
           >
-            <div className='bg-[url(/images/final-imgs/Sf-tiktokshop/thumb-sf-placeholder.jpg)] bg-cover bg-center w-full h-full place-content-center' data-cursor="view">
+            <div className='block bg-[url(/images/final-imgs/Sf-tiktokshop/thumb-sf-placeholder.jpg)] bg-cover bg-center w-full h-full' data-cursor="view">
             </div>        
           </ThumbRet>
 
@@ -80,7 +80,7 @@ function WorkPage() {
             title="Self-ordering and management system"
             subtitle="FoodTech | Mobile | Management platform"
           >
-            <Link to="/project-pleez" className='bg-[url(/images/final-imgs/pleez/pleez-thumb-main.jpg)] bg-cover  bg-center w-full h-full cursor-none' data-cursor="view">
+            <Link to="/project-pleez" className='block bg-[url(/images/final-imgs/pleez/pleez-thumb-main.jpg)] bg-cover  bg-center w-full h-full cursor-none' data-cursor="view">
             </Link>
           </ThumbSquare>
 
