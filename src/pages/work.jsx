@@ -56,7 +56,7 @@ function WorkPage() {
             title="Design System Zero → 1"
             subtitle="Creators Econ | Design System | Tokens Library"
           >
-            <Link to="/project-superfiliate-ds" className='block bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
+            <Link to="/project-superfiliate-ds-presentation" className='block bg-[url(/images/final-imgs/Superfiliate%20DS/thumb-ds-sf.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
             </Link>
           </ThumbSquare>
 
