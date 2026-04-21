@@ -72,8 +72,8 @@ function WorkPage() {
             title="Find better creators faster"
             subtitle="Creators Econ | Web | AI"
           >
-            <div className='block bg-[url(/images/final-imgs/Sf-tiktokshop/thumb-temporaria.jpg)] bg-cover bg-center w-full h-full' data-cursor="view">
-            </div>        
+            <Link to="/project-tiktok" className='block bg-[url(/images/final-imgs/Sf-tiktokshop/thumb-temporaria.jpg)] bg-cover bg-center w-full h-full cursor-none' data-cursor="view">
+            </Link>
           </ThumbRet>
 
           <ThumbSquare
