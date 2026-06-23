@@ -25,7 +25,7 @@ function ChipsPage() {
         <TopBar/>
 
         <div className='flex flex-col w-full gap-[25px] pt-[160px] pb-0 pr-6 pl-6 sm:pt-52 sm:pl-16 sm:pr-16 sm:pb-20 cursor-none' data-cursor="scroll">
-            <p className='text-gray-800 font-sora font-regular text-[36px] leading-[1.5] max-w-3/4'>
+            <p className='text-gray-800 font-[Satoshi] font-regular text-[36px] leading-[1.5] max-w-3/4'>
             Chips are UI components and micro-interactions <br></br>that may never step into the light of day
             </p>
         </div>

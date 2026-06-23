@@ -33,7 +33,7 @@ function Footer() {
         <div className='flex flex-row justify-center gap-16'>
           <Marquee autoFill={true}>
             <div className='flex flex-row justify-center ml-8 mr-8'>
-              <h1 className='text-gray-900 font-sora text-[102px] sm:text-[102px] font-medium tracking-tighter'>
+              <h1 className='text-gray-900 font-[Satoshi] text-[102px] sm:text-[102px] font-medium tracking-tighter'>
                 RAFAEL FURLAN
               </h1>
             </div>

@@ -249,13 +249,13 @@ function ProjectSuperfiliate() {
                 <div className='flex flex-row justify-center gap-16 pb-[80px] sm:pb-[100px] items-baseline' data-cursor="scroll">
                     <Marquee autoFill={true}>
                         <div className='flex flex-row justify-center ml-3 mr-3 sm:ml-4 sm:mr-4'>
-                            <h1 className='text-gray-800 font-sora text-[60px] sm:text-[56px] font-medium tracking-tighter'>+</h1>
+                            <h1 className='text-gray-800 font-[Satoshi] text-[60px] sm:text-[56px] font-medium tracking-tighter'>+</h1>
                         </div>
                         <div className='flex flex-row justify-center ml-3 mr-3 sm:ml-4 sm:mr-4'>
-                            <h1 className='text-gray-800 font-sora text-[60px] sm:text-[56px] font-medium tracking-tighter'>More</h1>
+                            <h1 className='text-gray-800 font-[Satoshi] text-[60px] sm:text-[56px] font-medium tracking-tighter'>More</h1>
                         </div>
                         <div className='flex flex-row justify-center ml-3 mr-3 sm:ml-4 sm:mr-4'>
-                            <h1 className='text-gray-800 font-sora text-[60px] sm:text-[56px] font-medium tracking-tighter'>projects</h1>
+                            <h1 className='text-gray-800 font-[Satoshi] text-[60px] sm:text-[56px] font-medium tracking-tighter'>projects</h1>
                         </div>
                     </Marquee>
                 </div>
