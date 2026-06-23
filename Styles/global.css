@@ -1,21 +1,16 @@
 @import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap');
 
-/* Aplica Sora globalmente */
 * {
-  font-family: 'Sora', sans-serif !important;
+  font-family: 'Satoshi', sans-serif !important;
 }
 
 body {
-  font-family: 'Sora', sans-serif !important;
-  cursor: none;
-}
-
-* {
-  cursor: none;
+  font-family: 'Satoshi', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, div {
-  font-family: 'Sora', sans-serif !important;
+  font-family: 'Satoshi', sans-serif !important;
 }
 
 /* Variáveis CSS para as cores midnight */
@@ -30,31 +25,4 @@ h1, h2, h3, h4, h5, h6, p, span, div {
   --midnight-700: #413D47;
   --midnight-800: #28252C;
   --midnight-900: #19171C;
-}
-
-@font-face {
-  font-family: 'Sora';
-  src: url("../public/fonts/Fonts/WEB/fonts/Sora-Regular.woff2") format("woff2"),
-       url("../public/fonts/Fonts/WEB/fonts/Sora-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Sora';
-  src: url("../public/fonts/Fonts/WEB/fonts/Sora-SemiBold.woff2") format("woff2"),
-       url("../public/fonts/Fonts/WEB/fonts/Sora-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Sora';
-  src: url("../public/fonts/Fonts/WEB/fonts/Sora-Bold.woff2") format("woff2"),
-       url("../public/fonts/Fonts/WEB/fonts/Sora-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
