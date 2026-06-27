@@ -29,7 +29,7 @@ function ProjectPleez() {
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      <div className="w-full max-w-[610px] mx-auto px-6 pt-16 pb-24 flex flex-col">
+      <div className="w-full max-w-[680px] mx-auto px-6 pt-16 pb-24 flex flex-col">
 
         <Link to="/" className="text-gray-400 text-sm mb-8 hover:text-[#3D3D3D] transition-colors">← Pleez / Mobile design</Link>
 
@@ -45,16 +45,16 @@ function ProjectPleez() {
           The challenge was clear: how do we create a system that allows customers to order independently while giving restaurants full visibility and control?
         </p>
 
-        <div className="w-[980px] max-w-[calc(100vw-48px)] relative left-1/2 -translate-x-1/2 aspect-video mb-12">
+        <div className="project-media aspect-video mb-12">
           <img className="w-full h-full rounded-[5px] object-cover" src="/images/final-imgs/pleez/pleez-cover.jpg" />
         </div>
 
         {lottieData1 ? (
-          <div className="w-full mb-12">
+          <div className="project-media mb-12">
             <Lottie animationData={lottieData1} loop={true} autoplay={true} className="w-full h-full" />
           </div>
         ) : (
-          <div className="w-full aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
+          <div className="project-media aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
             <p className="text-gray-400">Loading...</p>
           </div>
         )}
@@ -70,9 +70,9 @@ function ProjectPleez() {
           All without needing to depend on staff. This reduced waiting times and gave customers a sense of autonomy inside the restaurant.
         </p>
 
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/pleez/operators-1.jpg" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/pleez/operators-1.jpg" />
 
-        <div className="flex gap-4 mb-12">
+        <div className="project-media flex gap-4 mb-12">
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/pleez/operators-2.jpg" />
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/pleez/operators-3.jpg" />
         </div>
@@ -89,11 +89,11 @@ function ProjectPleez() {
         </p>
 
         {lottieData2 ? (
-          <div className="w-full mb-12">
+          <div className="project-media mb-12">
             <Lottie animationData={lottieData2} loop={true} autoplay={true} className="w-full h-full" />
           </div>
         ) : (
-          <div className="w-full aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
+          <div className="project-media aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
             <p className="text-gray-400">Loading...</p>
           </div>
         )}
@@ -104,7 +104,7 @@ function ProjectPleez() {
           This not only boosted adoption but also made the experience feel authentic to each brand, a critical factor in the hospitality industry.
         </p>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/pleez/pleez-cover.jpg" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/pleez/pleez-cover.jpg" />
 
         <h2 className="text-gray-900 text-lg font-medium mt-12 mb-4">The Impact</h2>
         <p className="text-gray-500 text-[15px] leading-relaxed mb-12">

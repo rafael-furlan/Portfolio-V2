@@ -7,7 +7,7 @@ const projects = [
     company: 'Superfiliate',
     category: 'Product design',
     image: '/images/final-imgs/creator-discovery/creator-discovery-1.jpg',
-    link: '/project-tiktok',
+    link: '/project-creator-discovery',
   },
   {
     title: 'From spreadsheet to platform',

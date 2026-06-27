@@ -7,6 +7,12 @@
   }
 }
 
+@layer components {
+  .project-media {
+    @apply w-[1080px] max-w-[calc(100vw-48px)] relative left-1/2 -translate-x-1/2;
+  }
+}
+
 * {
   font-family: 'Satoshi', sans-serif !important;
 }
