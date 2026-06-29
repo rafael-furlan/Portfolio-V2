@@ -1,14 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-function PlaceholderImage() {
-  return (
-    <div className="project-media aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
-      <p className="text-gray-400 text-sm">Image placeholder</p>
-    </div>
-  );
-}
-
 function ProjectVideo({ src }) {
   return (
     <div className="project-media aspect-video mb-12">
@@ -50,8 +42,6 @@ function ProjectCreatorDiscovery() {
           I chose to build within that constraint rather than wait for the infrastructure to change. That decision turned out to surface a larger one: discovery didn't belong inside the Ads channel at all. The work made that visible at the roadmap level. Discovery is now moving into its own hub, with separate pricing.
         </p>
 
-        <PlaceholderImage />
-
         <h2 className="text-gray-900 text-lg font-medium mb-4">Approach</h2>
         <p className="text-gray-500 text-[15px] leading-relaxed mb-4">
           In Sprint 1, engineering tested AI creator scoring. I tested the creation flow: filters plus a free-text prompt describing the creator vibe. The AI would score creators against it.
@@ -59,8 +49,6 @@ function ProjectCreatorDiscovery() {
         <p className="text-gray-500 text-[15px] leading-relaxed mb-12">
           It broke in two ways. The full analysis took up to four hours with no reference point — users expected a search. And users didn't know how to write a useful prompt. Vague inputs, vague results, nothing to help them do better.
         </p>
-
-        <PlaceholderImage />
 
         <p className="text-gray-500 text-[15px] leading-relaxed mb-4">
           In Sprint 2, the CPO added a requirement: delightful enough for product marketing videos. I read it as a structural constraint, not a visual one. Delight requires something to happen in front of you. That reframe changed the direction. The chat pattern solves the prompt problem without adding engineering complexity — it teaches you how to interact with it as you go. A form doesn't.
