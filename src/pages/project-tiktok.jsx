@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 function ProjectTiktok() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Discovery on autopilot — Rafael Furlan';
+    document.title = 'From buzz to $33M GMV — Rafael Furlan';
   }, []);
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      <div className="w-full max-w-[610px] mx-auto px-6 pt-16 pb-24 flex flex-col">
+      <div className="w-full max-w-[680px] mx-auto px-6 pt-16 pb-24 flex flex-col">
         <Link to="/" className="text-gray-400 text-sm mb-8 hover:text-[#3D3D3D] transition-colors">← Superfiliate / Product design</Link>
 
         <h1 className="text-gray-900 text-2xl font-medium mb-6">From buzz to $33M GMV</h1>
@@ -21,7 +21,7 @@ function ProjectTiktok() {
           The problem was that the API was incomplete, the user workflow was entirely unknown, and we had under two months to make it happen.
         </p>
 
-        <div className="w-[980px] max-w-[calc(100vw-48px)] relative left-1/2 -translate-x-1/2 aspect-video mb-12">
+        <div className="project-media aspect-video mb-12">
           <img className="w-full h-full rounded-[5px] object-cover" src="/images/final-imgs/Sf-tiktokshop/tw-bet-3.png" />
         </div>
 
@@ -33,7 +33,7 @@ function ProjectTiktok() {
           That work surfaced something important: the API was more incomplete than it first appeared. Key endpoints were missing, the full user workflow was unclear, and some of what we'd assumed we could build wasn't confirmed yet.
         </p>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/product-invetory.png" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/product-invetory.png" />
 
         <p className="text-gray-500 text-[15px] leading-relaxed mb-4">
           Which put us in front of a real decision. Wait for the API to mature — or ship something now. Waiting would give us conversations. Shipping would give us something real to put in people's hands.
@@ -42,7 +42,7 @@ function ProjectTiktok() {
           The engineer had a legitimate concern: we still couldn't fully scope the project. But the PM and I pushed to launch anyway. I mapped the full platform against what the API could actually support and shared both views side by side with the CPO — not to sell the vision, but to make the gap intentional.
         </p>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/bot.jpg" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/bot.jpg" />
 
         <h2 className="text-gray-900 text-lg font-medium mb-4">The discovery</h2>
         <p className="text-gray-500 text-[15px] leading-relaxed mb-12">
@@ -51,7 +51,7 @@ function ProjectTiktok() {
           We went in expecting spreadsheets. That's the default for influencer marketers. We were wrong about what mattered most.
         </p>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/research.png" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/research.png" />
 
         <p className="text-gray-500 text-[15px] leading-relaxed mb-4">
           The first thing that stopped us: they showed us the software they used to find and invite creators. Not a spreadsheet. A bot — scraping TikTok data, no official API access. But it had good UX. Someone had invested real effort into building it. One agency used a third-party version. Another brand had built their own from scratch.
@@ -63,7 +63,7 @@ function ProjectTiktok() {
           Not every agency was using the same tool, so the pattern didn't click in a single call. The PM and I would sync after each session. And across those conversations the same logic kept emerging: TikTok Shop wasn't a relationship game like Instagram. It was a volume game. The funnel looked like this — 1,000 invites sent, 100 accepted, maybe 10 would actually perform. To win, you needed to send thousands of invitations. Continuously.
         </p>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/telas-v1.jpg" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/telas-v1.jpg" />
 
         <h2 className="text-gray-900 text-lg font-medium mb-4">The pivot</h2>
         <p className="text-gray-500 text-[15px] leading-relaxed mb-4">
@@ -93,7 +93,7 @@ function ProjectTiktok() {
           </div>
         </div>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/v2.jpg" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/v2.jpg" />
 
         <h2 className="text-gray-900 text-lg font-medium mb-4">The design</h2>
         <p className="text-gray-500 text-[15px] leading-relaxed mb-4">
@@ -123,7 +123,7 @@ function ProjectTiktok() {
           </div>
         </div>
 
-        <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/marketing.png" />
+        <img className="project-media block rounded-[5px] object-cover mb-12" src="/images/final-imgs/Sf-tiktokshop/marketing.png" />
 
         <h2 className="text-gray-900 text-lg font-medium mb-4">Outcome</h2>
         <p className="text-gray-500 text-[15px] leading-relaxed mb-6">

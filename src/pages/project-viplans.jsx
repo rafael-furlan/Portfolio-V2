@@ -23,7 +23,7 @@ function ProjectViplans() {
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      <div className="w-full max-w-[610px] mx-auto px-6 pt-16 pb-24 flex flex-col">
+      <div className="w-full max-w-[680px] mx-auto px-6 pt-16 pb-24 flex flex-col">
 
         <Link to="/" className="text-gray-400 text-sm mb-8 hover:text-[#3D3D3D] transition-colors">← Viplan / Product design</Link>
 
@@ -36,13 +36,13 @@ function ProjectViplans() {
         </p>
 
         {/* Hero image */}
-        <div className="w-[980px] max-w-[calc(100vw-48px)] relative left-1/2 -translate-x-1/2 aspect-video mb-4">
+        <div className="project-media aspect-video mb-4">
           <img className="w-full h-full rounded-[5px] object-cover" src="/images/project-placeholders/Viplan/viplan-img-1.jpg" alt="Viplan project overview" />
         </div>
 
         {/* Lottie animation */}
         {lottieData1 ? (
-          <div className="w-full mb-4">
+          <div className="project-media mb-4">
             <Lottie
               animationData={lottieData1}
               loop={true}
@@ -51,16 +51,16 @@ function ProjectViplans() {
             />
           </div>
         ) : (
-          <div className="w-full aspect-video bg-gray-200 rounded-[5px] flex items-center justify-center mb-4">
+          <div className="project-media aspect-video bg-gray-200 rounded-[5px] flex items-center justify-center mb-4">
             <p className="text-gray-500">Loading animation...</p>
           </div>
         )}
 
         {/* Customer images */}
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/customer-2.jpg" alt="Viplan customer view" />
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/customer-3.jpg" alt="Viplan customer view" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/customer-2.jpg" alt="Viplan customer view" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/customer-3.jpg" alt="Viplan customer view" />
 
-        <div className="flex gap-4 mb-4">
+        <div className="project-media flex gap-4 mb-4">
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/viplan/customer-4.jpg" alt="Viplan customer view" />
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/viplan/customer-5.jpg" alt="Viplan customer view" />
         </div>
@@ -74,11 +74,11 @@ function ProjectViplans() {
         </p>
 
         {/* Company images */}
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/company-1.jpg" alt="Viplan company view" />
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/company-2.jpg" alt="Viplan company view" />
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/company-3.jpg" alt="Viplan company view" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/company-1.jpg" alt="Viplan company view" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/company-2.jpg" alt="Viplan company view" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/company-3.jpg" alt="Viplan company view" />
 
-        <div className="flex gap-4 mb-4">
+        <div className="project-media flex gap-4 mb-4">
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/viplan/company-4.jpg" alt="Viplan company view" />
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/viplan/company-5.jpg" alt="Viplan company view" />
         </div>
@@ -90,11 +90,11 @@ function ProjectViplans() {
         </p>
 
         {/* Finale images */}
-        <div className="flex gap-4 mb-4">
+        <div className="project-media flex gap-4 mb-4">
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/viplan/finale-1.jpg" alt="Viplan finale" />
           <img className="flex-1 min-w-0 rounded-[5px] object-cover" src="/images/final-imgs/viplan/finale-2.jpg" alt="Viplan finale" />
         </div>
-        <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/finale-3.jpg" alt="Viplan finale" />
+        <img className="project-media block rounded-[5px] object-cover mb-4" src="/images/final-imgs/viplan/finale-3.jpg" alt="Viplan finale" />
 
         {/* The Impact */}
         <h2 className="text-gray-900 text-lg font-medium mt-12 mb-4">The Impact</h2>

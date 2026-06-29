@@ -2,6 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
 
+const DS_IMG = '/images/final-imgs/Superfiliate%20DS';
+
+function ProjectImg({ src, className = '' }) {
+    return (
+        <img
+            className={`w-full rounded-[5px] object-cover ${className}`}
+            src={`${DS_IMG}/${src}`}
+            alt=""
+        />
+    );
+}
+
 function ProjectSuperfiliateDsPresentation() {
 
     const [lottieData1, setLottieData1] = useState(null);
@@ -14,7 +26,7 @@ function ProjectSuperfiliateDsPresentation() {
 
         const loadLottieAnimations = async () => {
             try {
-                const response1 = await fetch('/images/final-imgs/Superfiliate DS/light-to-dark-new.json');
+                const response1 = await fetch(`${DS_IMG}/light-to-dark-new.json`);
                 const data1 = await response1.json();
                 setLottieData1(data1);
 
@@ -35,7 +47,7 @@ function ProjectSuperfiliateDsPresentation() {
 
     return (
         <div className="w-full min-h-screen flex flex-col bg-white">
-            <div className="w-full max-w-[610px] mx-auto px-6 pt-16 pb-24 flex flex-col">
+            <div className="w-full max-w-[680px] mx-auto px-6 pt-16 pb-24 flex flex-col">
 
                 {/* Back link */}
                 <Link to="/" className="text-gray-400 text-sm mb-8 hover:text-[#3D3D3D] transition-colors">← Superfiliate / Design system</Link>
@@ -54,12 +66,12 @@ function ProjectSuperfiliateDsPresentation() {
                 </div>
 
                 {/* Cover image */}
-                <div className="w-[980px] max-w-[calc(100vw-48px)] relative left-1/2 -translate-x-1/2 aspect-video mb-12">
-                  <img className="w-full h-full rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/first-cover.jpg" />
+                <div className="project-media aspect-video mb-12">
+                  <ProjectImg src="first-cover.jpg" className="h-full" />
                 </div>
 
                 {/* The Opportunity */}
-                <img className="w-full rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/opportunity.jpg" />
+                <ProjectImg src="opportunity.jpg" className="project-media block mb-12" />
                 <h2 className="text-gray-900 text-lg font-medium mt-12 mb-4">The Opportunity</h2>
                 <p className="text-gray-500 text-[15px] leading-relaxed mb-12">
                     That was the moment I saw the great opportunity to start thinking about scaling our design within a design system. The team was still small — 3 designers. The implemented component library wasn't that big yet. It would be the ideal moment to grow not only the components themselves, but design patterns and principles alongside as we hired more designers.
@@ -72,9 +84,13 @@ function ProjectSuperfiliateDsPresentation() {
                 </p>
 
                 {/* Double image: governance + storybook */}
-                <div className="flex gap-4 mb-12">
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/image-governance.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/image-storrybook.jpg" />
+                <div className="project-media flex gap-4 mb-12 items-start">
+                    <div className="w-[33%] min-w-0 shrink-0">
+                        <ProjectImg src="image-governance.jpg" className="aspect-square" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="image-storrybook.jpg" />
+                    </div>
                 </div>
 
                 {/* How We Began */}
@@ -86,19 +102,29 @@ function ProjectSuperfiliateDsPresentation() {
                 </p>
 
                 {/* Token images: double */}
-                <div className="flex gap-4 mb-4">
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/tokens-1.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/tokens-2.jpg" />
+                <div className="project-media flex gap-4 mb-4 items-start">
+                    <div className="w-1/4 min-w-0 shrink-0">
+                        <ProjectImg src="tokens-1.jpg" className="aspect-square" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="tokens-2.jpg" />
+                    </div>
                 </div>
 
                 {/* Token images: single */}
-                <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/Superfiliate DS/tokens-3.jpg" />
+                <ProjectImg src="tokens-3.jpg" className="project-media block mb-4 aspect-[2688/1128]" />
 
                 {/* Token images: triple */}
-                <div className="flex gap-4 mb-12">
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/tokens-4.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/tokens-5.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/tokens-6.jpg" />
+                <div className="project-media flex gap-4 mb-12">
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="tokens-4.jpg" className="aspect-square" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="tokens-5.jpg" className="aspect-square" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="tokens-6.jpg" className="aspect-square" />
+                    </div>
                 </div>
 
                 {/* The Token Foundation */}
@@ -110,19 +136,27 @@ function ProjectSuperfiliateDsPresentation() {
                 </p>
 
                 {/* Component images: double 1 */}
-                <div className="flex gap-4 mb-4">
-                    <img className="flex-1 rounded-[5px] object-cover aspect-[4/5]" src="/images/final-imgs/Superfiliate DS/comp-1.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover aspect-[4/5]" src="/images/final-imgs/Superfiliate DS/comp-2.jpg" />
+                <div className="project-media flex gap-4 mb-4">
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="comp-1.jpg" className="aspect-[4/5]" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="comp-2.jpg" className="aspect-[4/5]" />
+                    </div>
                 </div>
 
                 {/* Component images: double 2 */}
-                <div className="flex gap-4 mb-4">
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/comp-3.jpg" />
-                    <img className="flex-[2] rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/comp-4.jpg" />
+                <div className="project-media flex gap-4 mb-4 aspect-[1080/660]">
+                    <div className="w-1/3 min-w-0 h-full">
+                        <ProjectImg src="comp-3.jpg" className="h-full" />
+                    </div>
+                    <div className="w-2/3 min-w-0 h-full">
+                        <ProjectImg src="comp-4.jpg" className="h-full" />
+                    </div>
                 </div>
 
                 {/* Component images: single */}
-                <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Superfiliate DS/comp-5.jpg" />
+                <ProjectImg src="comp-5.jpg" className="project-media block mb-12 aspect-video" />
 
                 {/* Building the Components and Documentation */}
                 <h2 className="text-gray-900 text-lg font-medium mt-12 mb-4">Building the Components and Documentation</h2>
@@ -134,7 +168,7 @@ function ProjectSuperfiliateDsPresentation() {
 
                 {/* Lottie animation 1 */}
                 {lottieData1 ? (
-                    <div className="w-full mb-12">
+                    <div className="project-media mb-12">
                         <Lottie
                             animationData={lottieData1}
                             loop={true}
@@ -143,7 +177,7 @@ function ProjectSuperfiliateDsPresentation() {
                         />
                     </div>
                 ) : (
-                    <div className="w-full aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
+                    <div className="project-media aspect-video bg-gray-100 rounded-[5px] flex items-center justify-center mb-12">
                         <p className="text-gray-400 text-sm">Loading animation...</p>
                     </div>
                 )}
@@ -157,8 +191,8 @@ function ProjectSuperfiliateDsPresentation() {
                 </p>
 
                 {/* Board and governance images */}
-                <img className="w-full rounded-[5px] object-cover mb-4" src="/images/final-imgs/Superfiliate DS/board.jpg" />
-                <img className="w-full rounded-[5px] object-cover mb-12" src="/images/final-imgs/Superfiliate DS/governance.jpg" />
+                <ProjectImg src="board.jpg" className="project-media block mb-4" />
+                <ProjectImg src="governance.jpg" className="project-media block mb-12" />
 
                 {/* Governance & How the System Stayed Alive */}
                 <h2 className="text-gray-900 text-lg font-medium mt-12 mb-4">Governance & How the System Stayed Alive</h2>
@@ -171,15 +205,23 @@ function ProjectSuperfiliateDsPresentation() {
                 </p>
 
                 {/* Finale images: double 1 (2/3 + 1/3) */}
-                <div className="flex gap-4 mb-4">
-                    <img className="flex-[2] rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/finale-1.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/finale-2.jpg" />
+                <div className="project-media flex gap-4 mb-4 aspect-[1080/660]">
+                    <div className="w-2/3 min-w-0 h-full">
+                        <ProjectImg src="finale-1.jpg" className="h-full" />
+                    </div>
+                    <div className="w-1/3 min-w-0 h-full">
+                        <ProjectImg src="finale-2.jpg" className="h-full" />
+                    </div>
                 </div>
 
                 {/* Finale images: double 2 */}
-                <div className="flex gap-4 mb-12">
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/finale-3.jpg" />
-                    <img className="flex-1 rounded-[5px] object-cover" src="/images/final-imgs/Superfiliate DS/finale-4.jpg" />
+                <div className="project-media flex gap-4 mb-12">
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="finale-3.jpg" className="aspect-square" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                        <ProjectImg src="finale-4.jpg" className="aspect-square" />
+                    </div>
                 </div>
 
                 {/* Impact and Results */}

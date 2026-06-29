@@ -7,6 +7,7 @@ import ProjectPleez from './pages/project-pleez.jsx'
 import ProjectSuperfiliateDs from './pages/project-superfiliate-ds.jsx'
 import ProjectViplans from './pages/project-viplans.jsx'
 import ProjectSuperfiliateDsPresentation from './pages/project-superfiliate-ds-presentation.jsx'
+import ProjectCreatorDiscovery from './pages/project-creator-discovery.jsx'
 import ProjectTiktok from './pages/project-tiktok.jsx'                        
 
 
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/project-superfiliate-ds-presentation" element={<ProjectSuperfiliateDsPresentation />} />
       <Route path="/project-viplan" element={<ProjectViplans />} />
       <Route path="/project-viplans" element={<ProjectViplans />} />
+      <Route path="/project-creator-discovery" element={<ProjectCreatorDiscovery />} />
       <Route path="/project-tiktok" element={<ProjectTiktok />} />
       <Route path="*" element={<div style={{padding:24}}>404 — Not found</div>} />
     </Routes>

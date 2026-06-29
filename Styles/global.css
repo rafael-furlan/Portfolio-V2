@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap');
 
+@layer base {
+  img {
+    @apply border border-black/10;
+  }
+}
+
+@layer components {
+  .project-media {
+    @apply w-[1080px] max-w-[calc(100vw-48px)] relative left-1/2 -translate-x-1/2;
+  }
+}
+
 * {
   font-family: 'Satoshi', sans-serif !important;
 }
